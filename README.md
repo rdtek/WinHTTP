@@ -6,4 +6,4 @@ Windows cmd line tool to send HTTP requests
 C:\winhttp http://www.google.com -v
 ```  
 
-[Command line screenshot](winhttp_cmd.png?raw=true)
+![Command line screenshot](winhttp_cmd.png?raw=true)
