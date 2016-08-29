@@ -1,11 +1,27 @@
 #include "StringTools.h"
 #include <string>
 #include <iostream>
-
+#include <sstream>
+#include <vector>
+#include "urlinfo.h"
 using namespace std;
 
 namespace StringTools {
 
+    void split(const string &s, char delim, vector<string> &elems) {
+        stringstream ss(s);
+        string item;
+        while (getline(ss, item, delim)) {
+            elems.push_back(item);
+        }
+    }
+
+    vector<string> split(const string &s, char delim) {
+        vector<string> elems;
+        split(s, delim, elems);
+        return elems;
+    }
+    
     //Trim functions adapted from 
     //http://stackoverflow.com/questions/216823/whats-the-best-way-to-trim-stdstring
 
@@ -29,18 +45,44 @@ namespace StringTools {
         return ltrim(rtrim(s, t), t);
     }
 
-    void parseURL(string& strInput)
+    void parseURL(string& strInputUrl, URLInfo& outUrl)
     {
-        //if (strInput.length <= 0) return;
-        cout << "\n[" << strInput << "]";
-        trim(strInput);
-        cout << "\n[" << strInput << "]";
-        size_t result = strInput.find("http", 0);
+        string str_url = strInputUrl;
+        outUrl.protocol = "";
+        outUrl.host = "";
+        outUrl.path = "";
+        size_t result = -1;
+        int path_idx = -1;
 
-        //TODO: extract and save the protocol e.g. http/https
-        //TODO: extract and save the hostname
-        //TODO: extract and save path after hostname
+        if (str_url.length() <= 0) return;
+        trim(str_url);
+        
+        //Get the PROTOCOL name
+        result = str_url.find("https", 0);
+        if (result >= 0) {
+            outUrl.protocol = "https";
+            ltrim(str_url, "https");
+        }
 
-        printf("\nRESULT = %d", result);
+        result = str_url.find("http", 0);
+        if (result >= 0) {
+            outUrl.protocol = "http";
+            ltrim(str_url, "http");
+        }
+
+        //Get the HOST name
+        ltrim(str_url, "://");
+        path_idx = str_url.find_first_of("/", 0);
+        if (path_idx <= -1) path_idx = str_url.size();
+        outUrl.host = str_url.substr(0, path_idx);
+        
+        //Get the path part
+        ltrim(str_url, "www.");
+        path_idx = str_url.find_first_of("/", 0);
+        outUrl.path = "/";
+        if (path_idx < str_url.length()) {
+            int path_length = str_url.length() - path_idx;
+            outUrl.path = str_url.substr(path_idx, path_length);
+        }
     }
 }

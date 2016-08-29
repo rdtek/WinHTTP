@@ -6,6 +6,7 @@
 #include <string>
 #include "logging.h"
 #include "stringtools.h"
+#include "urlinfo.h"
 
 #pragma comment(lib, "Ws2_32.lib")
 #define DEFAULT_PORT "80"
@@ -19,7 +20,8 @@ int main(int argc, char* argv[]) {
 
     WSADATA wsaData;
     int iResult;
-    bool bSaveResponse = false;
+    bool b_verbose_mode = false;
+    bool b_save_response = false;
     string strOutFilePath;
     string strHttpMethod = "GET";
 
@@ -34,25 +36,33 @@ int main(int argc, char* argv[]) {
     }
 
     string strURL(argv[1]);
-    StringTools::parseURL(strURL);
+    URLInfo urlInfo;
+    StringTools::parseURL(strURL, urlInfo);
+
+    /* Debug info */
+    /*
+    cout << "\n[" << strURL << "]";
+    cout << "\n[ str_protocol: " << urlInfo.protocol << "]";
+    cout << "\n[ str_host: " << urlInfo.host << "]";
+    cout << "\n[ str_path: " << urlInfo.path << "]";
+    */
 
     for (int i = 1; i < argc; i++) { 
         
-        cout << "\n[" << argv[i] << "]";
         string strArg(argv[i]);
 
-        if (strArg == "--output") {
+        if (strArg == "--output" || strArg == "-o") {
             //Save response to file
-            cout << "\nSAVE TRUE\n";
-            bSaveResponse = true;
+            b_save_response = true;
             strOutFilePath = string(argv[i + 1]);
         }
-        else if (argv[i] == "--method") {
+        else if (strArg == "--method" || strArg == "-m") {
             strHttpMethod = string(argv[i + 1]);
-            cout << "\n**METHOD " << strHttpMethod << "**\n";
+            cout << "\n** METHOD " << strHttpMethod << "**\n";
         }
-        
-        std::cout << argv[i] << " ";
+        else if (strArg == "--verbose" || strArg == "-v") {
+            b_verbose_mode = true;
+        }
     }
 
     //==========================================================================
@@ -75,7 +85,8 @@ int main(int argc, char* argv[]) {
     hints.ai_protocol = IPPROTO_TCP;
 
     // Resolve the server address and port
-    iResult = getaddrinfo(strURL.c_str(), DEFAULT_PORT, &hints, &result);
+    //iResult = getaddrinfo(strURL.c_str(), DEFAULT_PORT, &hints, &result);
+    iResult = getaddrinfo(urlInfo.host.c_str(), DEFAULT_PORT, &hints, &result);
     if (iResult != 0) {
         printf("\ngetaddrinfo failed: %d\n", iResult);
         WSACleanup();
@@ -123,16 +134,18 @@ int main(int argc, char* argv[]) {
     //==========================================================================
     int recvbuflen = DEFAULT_BUFLEN;
 
-    std::string strHttpReq;
-    strHttpReq.append(strHttpMethod);
-    strHttpReq.append(" /services/?fg=1 HTTP/1.0");
-    strHttpReq.append("\r\nHOST: ");
-    strHttpReq.append("www.google.com.tw:80");
-    strHttpReq.append("\r\n\r\n");
+    std::string strReq;
+    strReq.append(strHttpMethod);
+    strReq.append(" ");
+    strReq.append(urlInfo.path);
+    strReq.append(" HTTP/1.0");
+    strReq.append("\r\nHOST: ");
+    strReq.append(urlInfo.host);
+    strReq.append(":");
+    strReq.append(DEFAULT_PORT);
+    strReq.append("\r\n\r\n");
 
-    char recvbuf[DEFAULT_BUFLEN];
-
-    iResult = send(ConnectSocket, strHttpReq.c_str(), (int)strlen(strHttpReq.c_str()), 0);
+    iResult = send(ConnectSocket, strReq.c_str(), (int)strlen(strReq.c_str()), 0);
     if (iResult == SOCKET_ERROR) {
         printf("send failed: %d\n", WSAGetLastError());
         closesocket(ConnectSocket);
@@ -140,9 +153,10 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    printf("\nBytes Sent: %ld\n", iResult);
-    if (iResult > 0) {
-        printf("\n=== Sent Message: ===\n%s\n", strHttpReq.c_str());
+    if (b_verbose_mode && iResult > 0) {
+           printf("\n=== REQUEST: ===");
+           printf("\nBytes Sent: %ld", iResult);
+           printf("\n%s", strReq.c_str());
     }
 
     // shutdown the connection for sending since no more data will be sent
@@ -158,27 +172,43 @@ int main(int argc, char* argv[]) {
     //==========================================================================
     // RECEIVE RESPONSE - read data until the server closes the connection
     //==========================================================================
+    int loop_count = 0;
+    if (b_verbose_mode) printf("\n=== RESPONSE ===\n");
     do {
+        char recvbuf[DEFAULT_BUFLEN];
         iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
         
         std::ofstream outfile;
         
-        if (bSaveResponse) {
+        if (b_save_response) {
             if (strOutFilePath.empty()) strOutFilePath = "response.html";
             outfile.open(strOutFilePath, std::ios::app);
             outfile << recvbuf;
         }
         
         if (iResult > 0) {
-            printf("Bytes received: %d\n", iResult);
-            //printf("\n=== Received Message ===\n%s\n", recvbuf);
+            string str_resp_buff = string(recvbuf);
+            if (b_verbose_mode) {
+                printf("\rBytes received: %d\n", iResult);
+                //printf("%s", recvbuf);
+            }
+            if (loop_count == 0) {
+                //Read the status code
+                string str_response(recvbuf);
+                vector<string> items = StringTools::split(str_response, ' ');
+                if (!b_verbose_mode && items.size() >= 1) {
+                    cout << "\nSTATUS CODE: " << items[1] << "\n";
+                }
+            }
+            cout << str_resp_buff;
         }
         else if (iResult == 0) {
-            printf("Connection closed\n");
+            if(b_verbose_mode) printf("\nConnection closed\n");
         }
         else {
             printf("recv failed: %d\n", WSAGetLastError());
         }
+        loop_count++;
     } while (iResult > 0);
 
     // cleanup
