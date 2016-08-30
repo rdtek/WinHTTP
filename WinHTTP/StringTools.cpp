@@ -58,16 +58,16 @@ namespace StringTools {
         trim(str_url);
         
         //Get the PROTOCOL name
-        result = str_url.find("https", 0);
-        if (result >= 0) {
-            outUrl.protocol = "https";
-            ltrim(str_url, "https");
-        }
-
         result = str_url.find("http", 0);
         if (result >= 0) {
             outUrl.protocol = "http";
             ltrim(str_url, "http");
+        }
+
+        result = str_url.find("https", 0);
+        if (result >= 0) {
+            outUrl.protocol = "https";
+            ltrim(str_url, "https");
         }
 
         //Get the HOST name

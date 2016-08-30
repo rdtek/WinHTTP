@@ -1,4 +1,4 @@
-﻿Build started 29/08/2016 16:45:23.
+﻿Build started 30/08/2016 16:53:18.
 Environment at start of build:
 ALLUSERSPROFILE = C:\ProgramData
 APPDATA = C:\Users\mrrob\AppData\Roaming
@@ -9,6 +9,7 @@ COMPUTERNAME = DESKTOP-BQN1UAS
 ComSpec = C:\WINDOWS\system32\cmd.exe
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 FPS_BROWSER_USER_PROFILE_STRING = Default
+FugueRepository = C:\APPS\MSVS14\TEAM TOOLS\STATIC ANALYSIS TOOLS\FxCop\Repository
 HOMEDRIVE = C:
 HOMEPATH = \Users\mrrob
 JAVA_HOME = C:\apps\java\jdk
@@ -19,7 +20,7 @@ MSBuildLoadMicrosoftTargetsReadOnly = true
 MYSQLCONNECTOR_ASSEMBLIESPATH = C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5
 NUMBER_OF_PROCESSORS = 4
 OS = Windows_NT
-Path = C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin
+Path = C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\WinHTTP\;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 PkgDefApplicationConfigFile = C:\Users\mrrob\AppData\Local\Microsoft\VisualStudio\14.0\devenv.exe.config
 PROCESSOR_ARCHITECTURE = x86
@@ -51,8 +52,8 @@ VSLANG = 1033
 windir = C:\WINDOWS
 _JAVA_OPTIONS = -Xmx1536M
 
-16:45:23.676     1>Project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" on node 2 (Build target(s)).
-16:45:23.676     1>Initial Properties:
+16:53:18.629     1>Project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" on node 2 (Build target(s)).
+16:53:18.629     1>Initial Properties:
                    _AfterCompileWinFXInternalDependsOn = 
                            PrepareResourcesForSatelliteAssemblies;
                            MergeLocalizationDirectives;
@@ -602,7 +603,7 @@ _JAVA_OPTIONS = -Xmx1536M
                    EntityDeployDependsOn = 
                    EntityDeployIntermediateResourcePath = Debug\edmxResourcesToEmbed\
                    ExcludePath = C:\apps\msvs14\VC\include;;C:\apps\msvs14\VC\atlmfc\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt;;;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\apps\msvs14\VC\lib;;C:\apps\msvs14\VC\atlmfc\lib;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x86;;;
-                   ExecutablePath = C:\apps\msvs14\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\apps\msvs14\Common7\Tools\bin;C:\apps\msvs14\Common7\tools;C:\apps\msvs14\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin;
+                   ExecutablePath = C:\apps\msvs14\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\apps\msvs14\Common7\Tools\bin;C:\apps\msvs14\Common7\tools;C:\apps\msvs14\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\WinHTTP\;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin;
                    ExpandSDKAllowedReferenceExtensions = 
                          .winmd;
                          .dll
@@ -708,6 +709,7 @@ _JAVA_OPTIONS = -Xmx1536M
                    LOCALAPPDATA = C:\Users\mrrob\AppData\Local
                    LocalDebuggerAttach = False
                    LocalDebuggerCommand = C:\dev\WinHTTP\Debug\WinHTTP.exe
+                   LocalDebuggerCommandArguments = https://www.google.com
                    LocalDebuggerDebuggerType = Auto
                    LocalDebuggerMergeEnvironment = true
                    LocalDebuggerSQLDebugging = False
@@ -744,7 +746,7 @@ _JAVA_OPTIONS = -Xmx1536M
                    MpiDebuggerSchedulerTimeout = 5000
                    MsAppxPackageTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\AppxPackage\Microsoft.AppXPackage.Targets
                    MSBuild_ExecutablePath = C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\
-                   MSBuildAllProjects = ;C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.props;C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Xaml.targets
+                   MSBuildAllProjects = ;C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.targets;C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj.user;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.props;C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets;C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj.user;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Xaml.targets
                    MSBuildAssemblyVersion = 14.0
                    MSBuildBinPath = C:\Program Files (x86)\MSBuild\14.0\bin
                    MSBuildExtensionsPath = C:\Program Files (x86)\MSBuild
@@ -793,7 +795,7 @@ _JAVA_OPTIONS = -Xmx1536M
                    OutputPath = C:\dev\WinHTTP\Debug\
                    OutputType = exe
                    OverwriteReadOnlyFiles = false
-                   Path = C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin
+                   Path = C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\WinHTTP\;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin
                    PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
                    PkgDefApplicationConfigFile = C:\Users\mrrob\AppData\Local\Microsoft\VisualStudio\14.0\devenv.exe.config
                    Platform = Win32
@@ -1153,8 +1155,8 @@ _JAVA_OPTIONS = -Xmx1536M
                    XamlTemporaryAssemblyName = WinHTTP
                    YieldDuringToolExecution = true
 
-16:45:23.676     1>Building with tools version "14.0".
-16:45:23.676     1>Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:2)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (entry point):
+16:53:18.629     1>Building with tools version "14.0".
+16:53:18.630     1>Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:2)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (entry point):
                    Set Property: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'WinHTTP.vcxproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='Win32'.
                    Set Property: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'WinHTTP.vcxproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='Win32'.  This error may also appear if some other project is trying to follow a project-to-project reference to this project, this project has been unloaded or is not included in the solution, and the referencing project does not build using the same or an equivalent Configuration or Platform.
                    Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
@@ -1173,8 +1175,8 @@ _JAVA_OPTIONS = -Xmx1536M
                    Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\dev\WinHTTP\Debug\' != '' and !HasTrailingSlash('C:\dev\WinHTTP\Debug\')).
                    Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
                    Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Debug\' != '' and !HasTrailingSlash('Debug\')).
-16:45:23.680     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "WinHTTP.vcxproj".: (TargetId:2)
-16:45:23.681     1>Target "_PrepareForBuild: (TargetId:3)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:18.635     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "WinHTTP.vcxproj".: (TargetId:2)
+16:53:18.635     1>Target "_PrepareForBuild: (TargetId:3)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
                    Set Property: BuildType=Build
                    Set Property: _BuildActionType=Build
                    Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
@@ -1182,17 +1184,17 @@ _JAVA_OPTIONS = -Xmx1536M
                        CustomBuildStep=
                            WinHTTP
                                    Message=Performing Custom Build Step
-16:45:23.681     1>Done building target "_PrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:3)
-16:45:23.681     1>Target "_PrepareForReferenceResolution: (TargetId:4)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
+16:53:18.635     1>Done building target "_PrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:3)
+16:53:18.636     1>Target "_PrepareForReferenceResolution: (TargetId:4)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
                    Set Property: TargetFrameworkMoniker=
                    Set Property: _FindDependencies=false
                    Set Property: AdditionalExplicitAssemblyReferences=
                    Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
-16:45:23.681     1>Done building target "_PrepareForReferenceResolution" in project "WinHTTP.vcxproj".: (TargetId:4)
+16:53:18.636     1>Done building target "_PrepareForReferenceResolution" in project "WinHTTP.vcxproj".: (TargetId:4)
                    Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('logging.cpp;StringTools.cpp;URLInfo.cpp;WinHTTP.cpp'!='' and 'false'=='true' and '' != 'false').
-16:45:23.681     1>Target "BeforeResolveReferences: (TargetId:5)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
-16:45:23.681     1>Done building target "BeforeResolveReferences" in project "WinHTTP.vcxproj".: (TargetId:5)
-16:45:23.681     1>Target "AssignProjectConfiguration: (TargetId:6)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
+16:53:18.636     1>Target "BeforeResolveReferences: (TargetId:5)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
+16:53:18.636     1>Done building target "BeforeResolveReferences" in project "WinHTTP.vcxproj".: (TargetId:5)
+16:53:18.637     1>Target "AssignProjectConfiguration: (TargetId:6)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
                    Set Property: ShouldUnsetParentConfigurationAndPlatform=true
                    Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "AssignProjectConfiguration" (TaskId:4)
@@ -1207,23 +1209,23 @@ _JAVA_OPTIONS = -Xmx1536M
                      Task Parameter:OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True (TaskId:4)
                      Task Parameter:ShouldUnsetParentConfigurationAndPlatform=True (TaskId:4)
                    Done executing task "AssignProjectConfiguration". (TaskId:4)
-16:45:23.682     1>Done building target "AssignProjectConfiguration" in project "WinHTTP.vcxproj".: (TargetId:6)
+16:53:18.638     1>Done building target "AssignProjectConfiguration" in project "WinHTTP.vcxproj".: (TargetId:6)
                    Target "AssignProjectConfiguration" skipped. Previously built successfully.
-16:45:23.682     1>Target "_SplitProjectReferencesByFileExistence: (TargetId:7)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveProjectReferences" depends on it):
+16:53:18.638     1>Target "_SplitProjectReferencesByFileExistence: (TargetId:7)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveProjectReferences" depends on it):
                    Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
-16:45:23.682     1>Done building target "_SplitProjectReferencesByFileExistence" in project "WinHTTP.vcxproj".: (TargetId:7)
+16:53:18.638     1>Done building target "_SplitProjectReferencesByFileExistence" in project "WinHTTP.vcxproj".: (TargetId:7)
                    Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
-16:45:23.682     1>Target "ResolveProjectReferences: (TargetId:8)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
+16:53:18.638     1>Target "ResolveProjectReferences: (TargetId:8)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '14.0' != '10.0' and '' != '').
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '14.0' == '10.0' and '' != '').
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
                    Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
-16:45:23.682     1>Done building target "ResolveProjectReferences" in project "WinHTTP.vcxproj".: (TargetId:8)
+16:53:18.639     1>Done building target "ResolveProjectReferences" in project "WinHTTP.vcxproj".: (TargetId:8)
                    Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
                    Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
                    Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-16:45:23.682     1>Target "GetFrameworkPaths: (TargetId:9)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+16:53:18.639     1>Target "GetFrameworkPaths: (TargetId:9)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Added Item(s): _TargetFramework40DirectoryItem=C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319
                    Added Item(s): _TargetFramework35DirectoryItem=C:\WINDOWS\Microsoft.NET\Framework\v3.5
                    Added Item(s): _TargetFramework30DirectoryItem=C:\WINDOWS\Microsoft.NET\Framework\v3.0
@@ -1233,23 +1235,23 @@ _JAVA_OPTIONS = -Xmx1536M
                    Set Property: TargetFrameworkDirectory=C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319
                    Set Property: TargetFrameworkSDKDirectory=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\
                    Added Item(s): _TargetFrameworkSDKDirectoryItem=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\
-16:45:23.683     1>Done building target "GetFrameworkPaths" in project "WinHTTP.vcxproj".: (TargetId:9)
+16:53:18.639     1>Done building target "GetFrameworkPaths" in project "WinHTTP.vcxproj".: (TargetId:9)
                    Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
-16:45:23.683     1>Target "GetReferenceAssemblyPaths: (TargetId:10)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+16:53:18.639     1>Target "GetReferenceAssemblyPaths: (TargetId:10)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Set Property: TargetFrameworkDirectory=
                    Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
                    Set Property: TargetFrameworkDirectory=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0;;
                    Set Property: TargetFrameworkDirectory=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0;;;C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral
                    Set Property: RemoveAssemblyFoldersIfNoTargetFramework=true
-16:45:23.683     1>Done building target "GetReferenceAssemblyPaths" in project "WinHTTP.vcxproj".: (TargetId:10)
-16:45:23.683     1>Target "SetBuildDefaultEnvironmentVariables: (TargetId:11)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
+16:53:18.640     1>Done building target "GetReferenceAssemblyPaths" in project "WinHTTP.vcxproj".: (TargetId:10)
+16:53:18.640     1>Target "SetBuildDefaultEnvironmentVariables: (TargetId:11)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
                    Using "SetEnv" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
                    Task "SetEnv" (TaskId:5)
                      Task Parameter:Name=PATH (TaskId:5)
-                     Task Parameter:Value=C:\apps\msvs14\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\apps\msvs14\Common7\Tools\bin;C:\apps\msvs14\Common7\tools;C:\apps\msvs14\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin; (TaskId:5)
+                     Task Parameter:Value=C:\apps\msvs14\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\apps\msvs14\Common7\Tools\bin;C:\apps\msvs14\Common7\tools;C:\apps\msvs14\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\WinHTTP\;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin; (TaskId:5)
                      Task Parameter:Prefix=False (TaskId:5)
-                     PATH=C:\apps\msvs14\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\apps\msvs14\Common7\Tools\bin;C:\apps\msvs14\Common7\tools;C:\apps\msvs14\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin; (TaskId:5)
-                     Output Property: Path=C:\apps\msvs14\VC\bin%3bC:\Program Files %28x86%29\Windows Kits\8.1\bin\x86%3b%3bC:\Program Files %28x86%29\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools%3bC:\apps\msvs14\Common7\Tools\bin%3bC:\apps\msvs14\Common7\tools%3bC:\apps\msvs14\Common7\ide%3bC:\Program Files %28x86%29\HTML Help Workshop%3b%3bC:\Program Files %28x86%29\MSBuild\14.0\bin\%3bC:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\%3bC:\WINDOWS\SysWow64%3b%3bC:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86%3bC:\apps\python27\%3bC:\apps\python27\Scripts%3bC:\WINDOWS\system32%3bC:\WINDOWS%3bC:\WINDOWS\System32\Wbem%3bC:\WINDOWS\System32\WindowsPowerShell\v1.0\%3bC:\apps\git\cmd%3bC:\apps\mingw\bin%3bC:\apps\mingw\msys\1.0\bin%3bC:\apps\java\jdk\bin\%3bC:\WINDOWS\system32\config\systemprofile\.dnx\bin%3bC:\Program Files\Microsoft DNX\Dnvm\%3bC:\Program Files\Microsoft SQL Server\130\Tools\Binn\%3bC:\Program Files %28x86%29\Skype\Phone\%3bc:\apps\php%3bc:\apps\apache24%3bc:\apps\apache24\bin%3bC:\Program Files %28x86%29\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\%3bC:\Program Files %28x86%29\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\%3bC:\Program Files %28x86%29\IIS Express%3bC:\Program Files %28x86%29\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\%3bC:\Program Files %28x86%29\Microsoft SQL Server\120\Tools\Binn\%3bC:\Program Files %28x86%29\Microsoft SQL Server\120\DTS\Binn\%3bC:\Program Files %28x86%29\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\%3bC:\Program Files %28x86%29\Windows Kits\8.1\Windows Performance Toolkit\%3bC:\apps\activator\bin%3bC:\apps\google\google_appengine\%3bC:\Users\mrrob\AppData\Local\atom\bin%3bC:\apps\mscode\bin%3b (TaskId:5)
+                     PATH=C:\apps\msvs14\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\apps\msvs14\Common7\Tools\bin;C:\apps\msvs14\Common7\tools;C:\apps\msvs14\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\apps\python27\;C:\apps\python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apps\git\cmd;C:\apps\mingw\bin;C:\apps\mingw\msys\1.0\bin;C:\apps\java\jdk\bin\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;c:\apps\php;c:\apps\apache24;c:\apps\apache24\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\IIS Express;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\apps\activator\bin;C:\apps\WinHTTP\;C:\apps\google\google_appengine\;C:\Users\mrrob\AppData\Local\atom\bin;C:\apps\mscode\bin; (TaskId:5)
+                     Output Property: Path=C:\apps\msvs14\VC\bin%3bC:\Program Files %28x86%29\Windows Kits\8.1\bin\x86%3b%3bC:\Program Files %28x86%29\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools%3bC:\apps\msvs14\Common7\Tools\bin%3bC:\apps\msvs14\Common7\tools%3bC:\apps\msvs14\Common7\ide%3bC:\Program Files %28x86%29\HTML Help Workshop%3b%3bC:\Program Files %28x86%29\MSBuild\14.0\bin\%3bC:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\%3bC:\WINDOWS\SysWow64%3b%3bC:\apps\msvs14\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86%3bC:\apps\python27\%3bC:\apps\python27\Scripts%3bC:\WINDOWS\system32%3bC:\WINDOWS%3bC:\WINDOWS\System32\Wbem%3bC:\WINDOWS\System32\WindowsPowerShell\v1.0\%3bC:\apps\git\cmd%3bC:\apps\mingw\bin%3bC:\apps\mingw\msys\1.0\bin%3bC:\apps\java\jdk\bin\%3bC:\WINDOWS\system32\config\systemprofile\.dnx\bin%3bC:\Program Files\Microsoft DNX\Dnvm\%3bC:\Program Files\Microsoft SQL Server\130\Tools\Binn\%3bC:\Program Files %28x86%29\Skype\Phone\%3bc:\apps\php%3bc:\apps\apache24%3bc:\apps\apache24\bin%3bC:\Program Files %28x86%29\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\%3bC:\Program Files %28x86%29\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\%3bC:\Program Files %28x86%29\IIS Express%3bC:\Program Files %28x86%29\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\%3bC:\Program Files %28x86%29\Microsoft SQL Server\120\Tools\Binn\%3bC:\Program Files %28x86%29\Microsoft SQL Server\120\DTS\Binn\%3bC:\Program Files %28x86%29\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\%3bC:\Program Files %28x86%29\Windows Kits\8.1\Windows Performance Toolkit\%3bC:\apps\activator\bin%3bC:\apps\WinHTTP\%3bC:\apps\google\google_appengine\%3bC:\Users\mrrob\AppData\Local\atom\bin%3bC:\apps\mscode\bin%3b (TaskId:5)
                    Done executing task "SetEnv". (TaskId:5)
                    Task "SetEnv" (TaskId:6)
                      Task Parameter:Name=LIB (TaskId:6)
@@ -1272,9 +1274,9 @@ _JAVA_OPTIONS = -Xmx1536M
                      INCLUDE=C:\apps\msvs14\VC\include;;C:\apps\msvs14\VC\atlmfc\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt;;;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;; (TaskId:8)
                      Output Property: INCLUDE=C:\apps\msvs14\VC\include%3b%3bC:\apps\msvs14\VC\atlmfc\include%3b%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.10240.0\ucrt%3b%3b%3bC:\Program Files %28x86%29\Windows Kits\8.1\Include\um%3bC:\Program Files %28x86%29\Windows Kits\8.1\Include\shared%3bC:\Program Files %28x86%29\Windows Kits\8.1\Include\winrt%3b%3b (TaskId:8)
                    Done executing task "SetEnv". (TaskId:8)
-16:45:23.684     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "WinHTTP.vcxproj".: (TargetId:11)
+16:53:18.641     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "WinHTTP.vcxproj".: (TargetId:11)
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
-16:45:23.684     1>Target "GetResolvedWinMD: (TargetId:12)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
+16:53:18.641     1>Target "GetResolvedWinMD: (TargetId:12)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
                    Added Item(s): 
                        Link=
                            tmp
@@ -1357,8 +1359,8 @@ _JAVA_OPTIONS = -Xmx1536M
                                    TypeLibraryResourceID=1
                                    UACExecutionLevel=AsInvoker
                                    UACUIAccess=false
-16:45:23.685     1>Done building target "GetResolvedWinMD" in project "WinHTTP.vcxproj".: (TargetId:12)
-16:45:23.685     1>Target "PlatformPrepareForBuild: (TargetId:13)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
+16:53:18.642     1>Done building target "GetResolvedWinMD" in project "WinHTTP.vcxproj".: (TargetId:12)
+16:53:18.642     1>Target "PlatformPrepareForBuild: (TargetId:13)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
                    Set Property: ConfigurationPlatformExists=true
                    Set Property: _CurrentPlatformToolsetShortName=v140
                    Task "VCMessage" skipped, due to false condition; ('$(_Error64bitToolsNotInstalled)' == 'true') was evaluated as ('' == 'true').
@@ -1366,22 +1368,22 @@ _JAVA_OPTIONS = -Xmx1536M
                    Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v100') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v100').
                    Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v90') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v90').
                    Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' != 'v90' and '$(PlatformToolset)' != 'v100' and '$(PlatformToolset)' != 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v140' != 'v90' and 'v140' != 'v100' and 'v140' != 'v110').
-16:45:23.686     1>Done building target "PlatformPrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:13)
-16:45:23.686     1>Target "Desktop_PlatformPrepareForBuild: (TargetId:14)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Platforms\Win32\PlatformToolsets\v140\Toolset.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
+16:53:18.642     1>Done building target "PlatformPrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:13)
+16:53:18.642     1>Target "Desktop_PlatformPrepareForBuild: (TargetId:14)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Platforms\Win32\PlatformToolsets\v140\Toolset.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
                    Task "VCMessage" skipped, due to false condition; ($(MissingSDKProps) == 'true') was evaluated as ( == 'true').
-16:45:23.686     1>Done building target "Desktop_PlatformPrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:14)
+16:53:18.643     1>Done building target "Desktop_PlatformPrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:14)
                    Target "GetFrameworkPaths" skipped. Previously built successfully.
                    Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
                    Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
-16:45:23.686     1>Target "SetCABuildNativeEnvironmentVariables: (TargetId:15)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
+16:53:18.643     1>Target "SetCABuildNativeEnvironmentVariables: (TargetId:15)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForBuild" depends on it):
                    Initializing task factory "CodeTaskFactory" from assembly "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Build.Tasks.Core.dll".
                    Using "SetEnvironmentVariable" task from the task factory "Code Task Factory".
                    Task "SetEnvironmentVariable" (TaskId:9)
                      Task Parameter:EnvValue=C:\apps\msvs14\VC\atlmfc\include;C:\apps\msvs14\VC\include;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;; (TaskId:9)
                      Task Parameter:EnvKey=CAExcludePath (TaskId:9)
                    Done executing task "SetEnvironmentVariable". (TaskId:9)
-16:45:23.700     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "WinHTTP.vcxproj".: (TargetId:15)
-16:45:23.700     1>Target "PrepareForBuild: (TargetId:16)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+16:53:18.652     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "WinHTTP.vcxproj".: (TargetId:15)
+16:53:18.652     1>Target "PrepareForBuild: (TargetId:16)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Set Property: TargetDir=C:\dev\WinHTTP\Debug\
                    Set Property: LocalDebuggerCommand=C:\dev\WinHTTP\Debug\WinHTTP.exe
                    Set Property: BuildProjectReferences=false
@@ -1411,25 +1413,25 @@ _JAVA_OPTIONS = -Xmx1536M
                              C:\dev\WinHTTP\Debug\
                              Debug\WinHTTP.tlog\ (TaskId:11)
                    Done executing task "MakeDir". (TaskId:11)
-16:45:23.707     1>Done building target "PrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:16)
+16:53:18.657     1>Done building target "PrepareForBuild" in project "WinHTTP.vcxproj".: (TargetId:16)
                    Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
                    Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('logging.cpp;StringTools.cpp;URLInfo.cpp;WinHTTP.cpp'!='' and 'false'=='true' and '' != 'false').
-16:45:23.707     1>Target "GetInstalledSDKLocations: (TargetId:17)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveSDKReferences" depends on it):
+16:53:18.657     1>Target "GetInstalledSDKLocations: (TargetId:17)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveSDKReferences" depends on it):
                    Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
                    Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindows81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindows81)' != '' and '$(TargetPlatformVersionWindows81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
                    Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindowsPhone81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindowsPhone81)' != '' and '$(TargetPlatformVersionWindowsPhone81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
-16:45:23.707     1>Done building target "GetInstalledSDKLocations" in project "WinHTTP.vcxproj".: (TargetId:17)
-16:45:23.707     1>Target "ModifyUnitTestPlatformVersion: (TargetId:18)" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveSDKReferences" depends on it):
-16:45:23.707     1>Done building target "ModifyUnitTestPlatformVersion" in project "WinHTTP.vcxproj".: (TargetId:18)
-16:45:23.707     1>Target "ResolveSDKReferences: (TargetId:19)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+16:53:18.657     1>Done building target "GetInstalledSDKLocations" in project "WinHTTP.vcxproj".: (TargetId:17)
+16:53:18.657     1>Target "ModifyUnitTestPlatformVersion: (TargetId:18)" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveSDKReferences" depends on it):
+16:53:18.657     1>Done building target "ModifyUnitTestPlatformVersion" in project "WinHTTP.vcxproj".: (TargetId:18)
+16:53:18.657     1>Target "ResolveSDKReferences: (TargetId:19)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
-16:45:23.707     1>Done building target "ResolveSDKReferences" in project "WinHTTP.vcxproj".: (TargetId:19)
+16:53:18.657     1>Done building target "ResolveSDKReferences" in project "WinHTTP.vcxproj".: (TargetId:19)
                    Target "ResolveSDKReferences" skipped. Previously built successfully.
-16:45:23.707     1>Target "ExpandSDKReferences: (TargetId:20)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+16:53:18.657     1>Target "ExpandSDKReferences: (TargetId:20)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveAssemblyReferences" depends on it):
                    Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
-16:45:23.707     1>Done building target "ExpandSDKReferences" in project "WinHTTP.vcxproj".: (TargetId:20)
+16:53:18.657     1>Done building target "ExpandSDKReferences" in project "WinHTTP.vcxproj".: (TargetId:20)
                    Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('project.lock.json')).
-16:45:23.707     1>Target "ResolveAssemblyReferences: (TargetId:21)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
+16:53:18.657     1>Target "ResolveAssemblyReferences: (TargetId:21)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
                    Added Item(s): 
                        _ReferenceInstalledAssemblyDirectory=
                            C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
@@ -1438,19 +1440,19 @@ _JAVA_OPTIONS = -Xmx1536M
                    Set Property: ResolveAssemblyReferencesSilent=false
                    Set Property: ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch=Warning
                    Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
-16:45:23.708     1>Done building target "ResolveAssemblyReferences" in project "WinHTTP.vcxproj".: (TargetId:21)
+16:53:18.658     1>Done building target "ResolveAssemblyReferences" in project "WinHTTP.vcxproj".: (TargetId:21)
                    Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
                    Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and 'true' == 'true' and Exists('Debug\WinHTTP.vcxproj.WinHTTP.exe.config')).
                    Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
-16:45:23.708     1>Target "AfterResolveReferences: (TargetId:22)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
-16:45:23.708     1>Done building target "AfterResolveReferences" in project "WinHTTP.vcxproj".: (TargetId:22)
+16:53:18.658     1>Target "AfterResolveReferences: (TargetId:22)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ResolveReferences" depends on it):
+16:53:18.658     1>Done building target "AfterResolveReferences" in project "WinHTTP.vcxproj".: (TargetId:22)
                    Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
                    Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
-16:45:23.708     1>Target "ResolveReferences: (TargetId:23)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
-16:45:23.708     1>Done building target "ResolveReferences" in project "WinHTTP.vcxproj".: (TargetId:23)
+16:53:18.658     1>Target "ResolveReferences: (TargetId:23)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:18.658     1>Done building target "ResolveReferences" in project "WinHTTP.vcxproj".: (TargetId:23)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "PrepareForBuild" skipped. Previously built successfully.
-16:45:23.708     1>Target "InitializeBuildStatus: (TargetId:24)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:18.658     1>Target "InitializeBuildStatus: (TargetId:24)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
                    Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "ReadLinesFromFile" (TaskId:12)
                      Task Parameter:File=Debug\WinHTTP.tlog\WinHTTP.lastbuildstate (TaskId:12)
@@ -1476,76 +1478,76 @@ _JAVA_OPTIONS = -Xmx1536M
                      Task Parameter:Files=Debug\WinHTTP.tlog\unsuccessfulbuild (TaskId:14)
                      Creating "Debug\WinHTTP.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified. (TaskId:14)
                    Done executing task "Touch". (TaskId:14)
-16:45:23.715     1>Done building target "InitializeBuildStatus" in project "WinHTTP.vcxproj".: (TargetId:24)
+16:53:18.666     1>Done building target "InitializeBuildStatus" in project "WinHTTP.vcxproj".: (TargetId:24)
                    Target "AssignProjectConfiguration" skipped. Previously built successfully.
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-16:45:23.715     1>Target "BuildGenerateSourcesTraverse: (TargetId:25)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildGenerateSources" depends on it):
+16:53:18.666     1>Target "BuildGenerateSourcesTraverse: (TargetId:25)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildGenerateSources" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
-16:45:23.715     1>Done building target "BuildGenerateSourcesTraverse" in project "WinHTTP.vcxproj".: (TargetId:25)
+16:53:18.666     1>Done building target "BuildGenerateSourcesTraverse" in project "WinHTTP.vcxproj".: (TargetId:25)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:45:23.715     1>Target "BeforeBuildGenerateSources: (TargetId:26)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:45:23.715     1>Done building target "BeforeBuildGenerateSources" in project "WinHTTP.vcxproj".: (TargetId:26)
-16:45:23.715     1>Target "PreBuildEvent: (TargetId:27)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+16:53:18.666     1>Target "BeforeBuildGenerateSources: (TargetId:26)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+16:53:18.666     1>Done building target "BeforeBuildGenerateSources" in project "WinHTTP.vcxproj".: (TargetId:26)
+16:53:18.666     1>Target "PreBuildEvent: (TargetId:27)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
                    Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
-16:45:23.716     1>Done building target "PreBuildEvent" in project "WinHTTP.vcxproj".: (TargetId:27)
+16:53:18.666     1>Done building target "PreBuildEvent" in project "WinHTTP.vcxproj".: (TargetId:27)
                    Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
                    Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
                    Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
                    Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
-16:45:23.716     1>Target "_Xsd: (TargetId:28)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:45:23.716     1>Done building target "_Xsd" in project "WinHTTP.vcxproj".: (TargetId:28)
-16:45:23.716     1>Target "MakeDirsForMidl: (TargetId:29)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Midl" depends on it):
+16:53:18.667     1>Target "_Xsd: (TargetId:28)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+16:53:18.667     1>Done building target "_Xsd" in project "WinHTTP.vcxproj".: (TargetId:28)
+16:53:18.667     1>Target "MakeDirsForMidl: (TargetId:29)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Midl" depends on it):
                    Set Property: Midl_OutputDir=
                    Task "Makedir" (TaskId:15)
                    Done executing task "Makedir". (TaskId:15)
-16:45:23.716     1>Done building target "MakeDirsForMidl" in project "WinHTTP.vcxproj".: (TargetId:29)
+16:53:18.667     1>Done building target "MakeDirsForMidl" in project "WinHTTP.vcxproj".: (TargetId:29)
                    Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
                    Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
                    Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
                    Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-16:45:23.716     1>Target "ComputeMIDLGeneratedCompileInputs: (TargetId:30)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Midl" depends on it):
+16:53:18.667     1>Target "ComputeMIDLGeneratedCompileInputs: (TargetId:30)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Midl" depends on it):
                    Set Property: Midl_OutputDir=
-16:45:23.716     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "WinHTTP.vcxproj".: (TargetId:30)
-16:45:23.716     1>Target "AfterMidl: (TargetId:31)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Midl" depends on it):
-16:45:23.716     1>Done building target "AfterMidl" in project "WinHTTP.vcxproj".: (TargetId:31)
-16:45:23.716     1>Target "_Midl: (TargetId:32)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:45:23.716     1>Done building target "_Midl" in project "WinHTTP.vcxproj".: (TargetId:32)
-16:45:23.716     1>Target "AfterBuildGenerateSources: (TargetId:33)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:45:23.716     1>Done building target "AfterBuildGenerateSources" in project "WinHTTP.vcxproj".: (TargetId:33)
-16:45:23.716     1>Target "AfterBuildGenerateSourcesEvent: (TargetId:34)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-16:45:23.717     1>Done building target "AfterBuildGenerateSourcesEvent" in project "WinHTTP.vcxproj".: (TargetId:34)
-16:45:23.717     1>Target "_BuildGenerateSourcesAction: (TargetId:35)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildGenerateSources" depends on it):
-16:45:23.717     1>Done building target "_BuildGenerateSourcesAction" in project "WinHTTP.vcxproj".: (TargetId:35)
-16:45:23.717     1>Target "BuildGenerateSources: (TargetId:36)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
-16:45:23.717     1>Done building target "BuildGenerateSources" in project "WinHTTP.vcxproj".: (TargetId:36)
+16:53:18.667     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "WinHTTP.vcxproj".: (TargetId:30)
+16:53:18.667     1>Target "AfterMidl: (TargetId:31)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Midl" depends on it):
+16:53:18.667     1>Done building target "AfterMidl" in project "WinHTTP.vcxproj".: (TargetId:31)
+16:53:18.667     1>Target "_Midl: (TargetId:32)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+16:53:18.667     1>Done building target "_Midl" in project "WinHTTP.vcxproj".: (TargetId:32)
+16:53:18.667     1>Target "AfterBuildGenerateSources: (TargetId:33)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+16:53:18.667     1>Done building target "AfterBuildGenerateSources" in project "WinHTTP.vcxproj".: (TargetId:33)
+16:53:18.667     1>Target "AfterBuildGenerateSourcesEvent: (TargetId:34)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+16:53:18.667     1>Done building target "AfterBuildGenerateSourcesEvent" in project "WinHTTP.vcxproj".: (TargetId:34)
+16:53:18.667     1>Target "_BuildGenerateSourcesAction: (TargetId:35)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildGenerateSources" depends on it):
+16:53:18.667     1>Done building target "_BuildGenerateSourcesAction" in project "WinHTTP.vcxproj".: (TargetId:35)
+16:53:18.667     1>Target "BuildGenerateSources: (TargetId:36)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:18.667     1>Done building target "BuildGenerateSources" in project "WinHTTP.vcxproj".: (TargetId:36)
                    Target "AssignProjectConfiguration" skipped. Previously built successfully.
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-16:45:23.717     1>Target "BuildCompileTraverse: (TargetId:37)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildCompile" depends on it):
+16:53:18.667     1>Target "BuildCompileTraverse: (TargetId:37)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildCompile" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-16:45:23.717     1>Done building target "BuildCompileTraverse" in project "WinHTTP.vcxproj".: (TargetId:37)
+16:53:18.667     1>Done building target "BuildCompileTraverse" in project "WinHTTP.vcxproj".: (TargetId:37)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:45:23.717     1>Target "BeforeClCompile: (TargetId:38)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
-16:45:23.717     1>Done building target "BeforeClCompile" in project "WinHTTP.vcxproj".: (TargetId:38)
+16:53:18.667     1>Target "BeforeClCompile: (TargetId:38)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.667     1>Done building target "BeforeClCompile" in project "WinHTTP.vcxproj".: (TargetId:38)
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-16:45:23.717     1>Target "ComputeCLInputPDBName: (TargetId:39)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
-16:45:23.717     1>Done building target "ComputeCLInputPDBName" in project "WinHTTP.vcxproj".: (TargetId:39)
+16:53:18.667     1>Target "ComputeCLInputPDBName: (TargetId:39)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.667     1>Done building target "ComputeCLInputPDBName" in project "WinHTTP.vcxproj".: (TargetId:39)
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:45:23.717     1>Target "ComputeReferenceCLInput: (TargetId:40)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.667     1>Target "ComputeReferenceCLInput: (TargetId:40)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
                    Task "WriteLinesToFile" skipped, due to false condition; (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true') was evaluated as ((''!='') and '' != 'true').
                    Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
-16:45:23.717     1>Done building target "ComputeReferenceCLInput" in project "WinHTTP.vcxproj".: (TargetId:40)
-16:45:23.717     1>Target "WarnCompileDuplicatedFilename: (TargetId:41)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.671     1>Done building target "ComputeReferenceCLInput" in project "WinHTTP.vcxproj".: (TargetId:40)
+16:53:18.671     1>Target "WarnCompileDuplicatedFilename: (TargetId:41)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'logging.cpp' != 'logging.cpp' and 'Debug\' == 'Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'StringTools.cpp' != 'StringTools.cpp' and 'Debug\' == 'Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'URLInfo.cpp' != 'URLInfo.cpp' and 'Debug\' == 'Debug\').
                    Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'WinHTTP.cpp' != 'WinHTTP.cpp' and 'Debug\' == 'Debug\').
-16:45:23.719     1>Done building target "WarnCompileDuplicatedFilename" in project "WinHTTP.vcxproj".: (TargetId:41)
-16:45:23.719     1>Target "FixupCLCompileOptions: (TargetId:42)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
-16:45:23.719     1>Done building target "FixupCLCompileOptions" in project "WinHTTP.vcxproj".: (TargetId:42)
-16:45:23.719     1>Target "MakeDirsForCl: (TargetId:43)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.673     1>Done building target "WarnCompileDuplicatedFilename" in project "WinHTTP.vcxproj".: (TargetId:41)
+16:53:18.673     1>Target "FixupCLCompileOptions: (TargetId:42)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.674     1>Done building target "FixupCLCompileOptions" in project "WinHTTP.vcxproj".: (TargetId:42)
+16:53:18.674     1>Target "MakeDirsForCl: (TargetId:43)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
                    Added Item(s): ClDirsToMake=C:\dev\WinHTTP\WinHTTP\Debug
                    Added Item(s): ClDirsToMake=C:\dev\WinHTTP\WinHTTP\Debug
                    Added Item(s): ClDirsToMake=C:\dev\WinHTTP\WinHTTP\Debug
@@ -1564,25 +1566,25 @@ _JAVA_OPTIONS = -Xmx1536M
                            C:\dev\WinHTTP\WinHTTP\Debug
                            C:\dev\WinHTTP\WinHTTP\Debug
                            C:\dev\WinHTTP\WinHTTP\Debug
-16:45:23.720     1>Done building target "MakeDirsForCl" in project "WinHTTP.vcxproj".: (TargetId:43)
+16:53:18.674     1>Done building target "MakeDirsForCl" in project "WinHTTP.vcxproj".: (TargetId:43)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
-16:45:23.720     1>Target "_SelectedFiles: (TargetId:44)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "SelectClCompile" depends on it):
-16:45:23.720     1>Done building target "_SelectedFiles" in project "WinHTTP.vcxproj".: (TargetId:44)
+16:53:18.675     1>Target "_SelectedFiles: (TargetId:44)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "SelectClCompile" depends on it):
+16:53:18.675     1>Done building target "_SelectedFiles" in project "WinHTTP.vcxproj".: (TargetId:44)
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
                    Target "ComputeCLInputPDBName" skipped. Previously built successfully.
                    Target "ComputeReferenceCLInput" skipped. Previously built successfully.
                    Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
                    Target "FixupCLCompileOptions" skipped. Previously built successfully.
                    Target "_SelectedFiles" skipped. Previously built successfully.
-16:45:23.720     1>Target "SelectCustomBuild: (TargetId:45)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "SelectClCompile" depends on it):
-16:45:23.720     1>Done building target "SelectCustomBuild" in project "WinHTTP.vcxproj".: (TargetId:45)
-16:45:23.720     1>Target "SelectClCompile: (TargetId:46)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ClCompile" depends on it):
-16:45:23.720     1>Done building target "SelectClCompile" in project "WinHTTP.vcxproj".: (TargetId:46)
+16:53:18.675     1>Target "SelectCustomBuild: (TargetId:45)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "SelectClCompile" depends on it):
+16:53:18.675     1>Done building target "SelectCustomBuild" in project "WinHTTP.vcxproj".: (TargetId:45)
+16:53:18.675     1>Target "SelectClCompile: (TargetId:46)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ClCompile" depends on it):
+16:53:18.675     1>Done building target "SelectClCompile" in project "WinHTTP.vcxproj".: (TargetId:46)
                    Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
                    Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('logging.cpp;StringTools.cpp;URLInfo.cpp;WinHTTP.cpp' != '' and 'false' == 'True').
-16:45:23.720     1>Target "ClCompile: (TargetId:47)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:18.675     1>Target "ClCompile: (TargetId:47)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
                    Set Property: CLToolArchitecture=Native32Bit
                    Set Property: CLDeleteOutputOnExecute=true
                    Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc140.pdb' != '' and !Exists(Debug\vc140.pdb)).
@@ -1910,51 +1912,51 @@ _JAVA_OPTIONS = -Xmx1536M
                      	C:\DEV\WINHTTP\WINHTTP\DEBUG\STRINGTOOLS.OBJ (TaskId:17)
                      	C:\DEV\WINHTTP\WINHTTP\DEBUG\URLINFO.OBJ (TaskId:17)
                      	C:\DEV\WINHTTP\WINHTTP\DEBUG\WINHTTP.OBJ (TaskId:17)
-                     WinHTTP.cpp will be compiled as C:\dev\WinHTTP\WinHTTP\WinHTTP.cpp was modified at 29/08/2016 16:45:22. (TaskId:17)
+                     WinHTTP.cpp will be compiled as C:\dev\WinHTTP\WinHTTP\WinHTTP.cpp was modified at 30/08/2016 16:53:13. (TaskId:17)
                      Environment Variables passed to tool: (TaskId:17)
-                       VS_UNICODE_OUTPUT=1736 (TaskId:17)
+                       VS_UNICODE_OUTPUT=1324 (TaskId:17)
                      C:\apps\msvs14\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt WinHTTP.cpp (TaskId:17)
                      Tracking command: (TaskId:17)
-                     C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i C:\dev\WinHTTP\WinHTTP\Debug\WinHTTP.tlog /r C:\DEV\WINHTTP\WINHTTP\WINHTTP.CPP /b MSBuildConsole_CancelEvent531d40deefce4e6da13ef3d8b3a19f77  /c C:\apps\msvs14\VC\bin\CL.exe  /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt WinHTTP.cpp (TaskId:17)
+                     C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i C:\dev\WinHTTP\WinHTTP\Debug\WinHTTP.tlog /r C:\DEV\WINHTTP\WINHTTP\WINHTTP.CPP /b MSBuildConsole_CancelEventf4be99eff8374999bff48879169ff0b3  /c C:\apps\msvs14\VC\bin\CL.exe  /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt WinHTTP.cpp (TaskId:17)
                      WinHTTP.cpp (TaskId:17)
                    Done executing task "CL". (TaskId:17)
-16:45:25.447     1>Done building target "ClCompile" in project "WinHTTP.vcxproj".: (TargetId:47)
+16:53:20.679     1>Done building target "ClCompile" in project "WinHTTP.vcxproj".: (TargetId:47)
                    Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('logging.cpp;StringTools.cpp;URLInfo.cpp;WinHTTP.cpp' != '' and 'false' == 'True').
-16:45:25.447     1>Target "AfterClCompile: (TargetId:48)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
-16:45:25.447     1>Done building target "AfterClCompile" in project "WinHTTP.vcxproj".: (TargetId:48)
-16:45:25.447     1>Target "_ClCompile: (TargetId:49)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildCompileAction" depends on it):
-16:45:25.447     1>Done building target "_ClCompile" in project "WinHTTP.vcxproj".: (TargetId:49)
+16:53:20.679     1>Target "AfterClCompile: (TargetId:48)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ClCompile" depends on it):
+16:53:20.679     1>Done building target "AfterClCompile" in project "WinHTTP.vcxproj".: (TargetId:48)
+16:53:20.679     1>Target "_ClCompile: (TargetId:49)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildCompileAction" depends on it):
+16:53:20.679     1>Done building target "_ClCompile" in project "WinHTTP.vcxproj".: (TargetId:49)
                    Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-16:45:25.447     1>Target "BeforeResourceCompile: (TargetId:50)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ResourceCompile" depends on it):
-16:45:25.447     1>Done building target "BeforeResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:50)
-16:45:25.447     1>Target "MakeDirsForResourceCompile: (TargetId:51)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ResourceCompile" depends on it):
+16:53:20.680     1>Target "BeforeResourceCompile: (TargetId:50)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ResourceCompile" depends on it):
+16:53:20.680     1>Done building target "BeforeResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:50)
+16:53:20.680     1>Target "MakeDirsForResourceCompile: (TargetId:51)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ResourceCompile" depends on it):
                    Added Item(s): RcDirsToMake=C:\dev\WinHTTP\WinHTTP\Debug
                    Task "MakeDir" (TaskId:18)
                      Task Parameter:Directories=C:\dev\WinHTTP\WinHTTP\Debug (TaskId:18)
                    Done executing task "MakeDir". (TaskId:18)
                    Removed Item(s): RcDirsToMake=C:\dev\WinHTTP\WinHTTP\Debug
-16:45:25.448     1>Done building target "MakeDirsForResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:51)
+16:53:20.680     1>Done building target "MakeDirsForResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:51)
                    Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-16:45:25.448     1>Target "AfterResourceCompile: (TargetId:52)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ResourceCompile" depends on it):
-16:45:25.448     1>Done building target "AfterResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:52)
-16:45:25.448     1>Target "_ResourceCompile: (TargetId:53)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildCompileAction" depends on it):
-16:45:25.448     1>Done building target "_ResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:53)
+16:53:20.680     1>Target "AfterResourceCompile: (TargetId:52)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_ResourceCompile" depends on it):
+16:53:20.680     1>Done building target "AfterResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:52)
+16:53:20.680     1>Target "_ResourceCompile: (TargetId:53)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildCompileAction" depends on it):
+16:53:20.680     1>Done building target "_ResourceCompile" in project "WinHTTP.vcxproj".: (TargetId:53)
                    Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
                    Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
-16:45:25.448     1>Target "AfterBuildCompileEvent: (TargetId:54)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildCompileAction" depends on it):
-16:45:25.448     1>Done building target "AfterBuildCompileEvent" in project "WinHTTP.vcxproj".: (TargetId:54)
-16:45:25.448     1>Target "_BuildCompileAction: (TargetId:55)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildCompile" depends on it):
-16:45:25.448     1>Done building target "_BuildCompileAction" in project "WinHTTP.vcxproj".: (TargetId:55)
-16:45:25.448     1>Target "BuildCompile: (TargetId:56)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
-16:45:25.448     1>Done building target "BuildCompile" in project "WinHTTP.vcxproj".: (TargetId:56)
+16:53:20.680     1>Target "AfterBuildCompileEvent: (TargetId:54)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildCompileAction" depends on it):
+16:53:20.680     1>Done building target "AfterBuildCompileEvent" in project "WinHTTP.vcxproj".: (TargetId:54)
+16:53:20.680     1>Target "_BuildCompileAction: (TargetId:55)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildCompile" depends on it):
+16:53:20.680     1>Done building target "_BuildCompileAction" in project "WinHTTP.vcxproj".: (TargetId:55)
+16:53:20.680     1>Target "BuildCompile: (TargetId:56)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:20.680     1>Done building target "BuildCompile" in project "WinHTTP.vcxproj".: (TargetId:56)
                    Target "AssignProjectConfiguration" skipped. Previously built successfully.
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-16:45:25.448     1>Target "BuildLinkTraverse: (TargetId:57)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildLink" depends on it):
+16:53:20.680     1>Target "BuildLinkTraverse: (TargetId:57)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildLink" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-16:45:25.448     1>Done building target "BuildLinkTraverse" in project "WinHTTP.vcxproj".: (TargetId:57)
+16:53:20.680     1>Done building target "BuildLinkTraverse" in project "WinHTTP.vcxproj".: (TargetId:57)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:45:25.448     1>Target "ComputeLegacyManifestEmbedding: (TargetId:58)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:20.680     1>Target "ComputeLegacyManifestEmbedding: (TargetId:58)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
                    Added Item(s): 
                        Manifest=
                            temp
@@ -1984,26 +1986,26 @@ _JAVA_OPTIONS = -Xmx1536M
                                    TrackerLogDirectory=Debug\WinHTTP.tlog\
                                    UpdateFileHashes=false
                                    VerboseOutput=true
-16:45:25.449     1>Done building target "ComputeLegacyManifestEmbedding" in project "WinHTTP.vcxproj".: (TargetId:58)
-16:45:25.449     1>Target "BeforeLink: (TargetId:59)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
-16:45:25.449     1>Done building target "BeforeLink" in project "WinHTTP.vcxproj".: (TargetId:59)
-16:45:25.449     1>Target "ComputeRCOutputs: (TargetId:60)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
-16:45:25.449     1>Done building target "ComputeRCOutputs" in project "WinHTTP.vcxproj".: (TargetId:60)
-16:45:25.449     1>Target "ComputeRCGeneratedLinkInputs: (TargetId:61)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
-16:45:25.449     1>Done building target "ComputeRCGeneratedLinkInputs" in project "WinHTTP.vcxproj".: (TargetId:61)
-16:45:25.449     1>Target "ComputeManifestGeneratedLinkerInputs: (TargetId:62)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
-16:45:25.449     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "WinHTTP.vcxproj".: (TargetId:62)
-16:45:25.449     1>Target "ComputeCustomBuildOutput: (TargetId:63)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.681     1>Done building target "ComputeLegacyManifestEmbedding" in project "WinHTTP.vcxproj".: (TargetId:58)
+16:53:20.681     1>Target "BeforeLink: (TargetId:59)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.681     1>Done building target "BeforeLink" in project "WinHTTP.vcxproj".: (TargetId:59)
+16:53:20.681     1>Target "ComputeRCOutputs: (TargetId:60)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+16:53:20.681     1>Done building target "ComputeRCOutputs" in project "WinHTTP.vcxproj".: (TargetId:60)
+16:53:20.681     1>Target "ComputeRCGeneratedLinkInputs: (TargetId:61)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.681     1>Done building target "ComputeRCGeneratedLinkInputs" in project "WinHTTP.vcxproj".: (TargetId:61)
+16:53:20.681     1>Target "ComputeManifestGeneratedLinkerInputs: (TargetId:62)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.681     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "WinHTTP.vcxproj".: (TargetId:62)
+16:53:20.681     1>Target "ComputeCustomBuildOutput: (TargetId:63)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
                    Task "MakeDir" (TaskId:19)
                    Done executing task "MakeDir". (TaskId:19)
-16:45:25.449     1>Done building target "ComputeCustomBuildOutput" in project "WinHTTP.vcxproj".: (TargetId:63)
+16:53:20.681     1>Done building target "ComputeCustomBuildOutput" in project "WinHTTP.vcxproj".: (TargetId:63)
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
                    Target "ComputeCLInputPDBName" skipped. Previously built successfully.
                    Target "ComputeReferenceCLInput" skipped. Previously built successfully.
                    Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
                    Target "FixupCLCompileOptions" skipped. Previously built successfully.
-16:45:25.449     1>Target "ComputeCLOutputs: (TargetId:64)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+16:53:20.681     1>Target "ComputeCLOutputs: (TargetId:64)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
                    Added Item(s): 
                        Obj=
                            Debug\logging.obj
@@ -2246,8 +2248,8 @@ _JAVA_OPTIONS = -Xmx1536M
                                    WholeProgramOptimization=false
                                    WinRTNoStdLib=false
                                    XMLDocumentationFileName=Debug\
-16:45:25.454     1>Done building target "ComputeCLOutputs" in project "WinHTTP.vcxproj".: (TargetId:64)
-16:45:25.454     1>Target "ComputeCLGeneratedLinkInputs: (TargetId:65)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.683     1>Done building target "ComputeCLOutputs" in project "WinHTTP.vcxproj".: (TargetId:64)
+16:53:20.683     1>Target "ComputeCLGeneratedLinkInputs: (TargetId:65)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Added Item(s): 
                        Link=
                            Debug\logging.obj
@@ -2402,11 +2404,11 @@ _JAVA_OPTIONS = -Xmx1536M
                                    TypeLibraryResourceID=1
                                    UACExecutionLevel=AsInvoker
                                    UACUIAccess=false
-16:45:25.455     1>Done building target "ComputeCLGeneratedLinkInputs" in project "WinHTTP.vcxproj".: (TargetId:65)
-16:45:25.455     1>Target "ComputeLinkInputsFromProject: (TargetId:66)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
-16:45:25.455     1>Done building target "ComputeLinkInputsFromProject" in project "WinHTTP.vcxproj".: (TargetId:66)
+16:53:20.699     1>Done building target "ComputeCLGeneratedLinkInputs" in project "WinHTTP.vcxproj".: (TargetId:65)
+16:53:20.699     1>Target "ComputeLinkInputsFromProject: (TargetId:66)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.699     1>Done building target "ComputeLinkInputsFromProject" in project "WinHTTP.vcxproj".: (TargetId:66)
                    Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
-16:45:25.455     1>Target "ComputeManifestInputsTargets: (TargetId:67)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.699     1>Target "ComputeManifestInputsTargets: (TargetId:67)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Added Item(s): 
                        Manifest=
                            temp
@@ -2437,10 +2439,10 @@ _JAVA_OPTIONS = -Xmx1536M
                                    TrackerLogDirectory=Debug\WinHTTP.tlog\
                                    UpdateFileHashes=false
                                    VerboseOutput=true
-16:45:25.457     1>Done building target "ComputeManifestInputsTargets" in project "WinHTTP.vcxproj".: (TargetId:67)
+16:53:20.700     1>Done building target "ComputeManifestInputsTargets" in project "WinHTTP.vcxproj".: (TargetId:67)
                    Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
                    Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
-16:45:25.457     1>Target "AssignTargetPaths: (TargetId:68)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareResourceNames" depends on it):
+16:53:20.700     1>Target "AssignTargetPaths: (TargetId:68)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareResourceNames" depends on it):
                    Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "AssignTargetPath" (TaskId:20)
                      Task Parameter:RootFolder=C:\dev\WinHTTP\WinHTTP (TaskId:20)
@@ -2455,9 +2457,9 @@ _JAVA_OPTIONS = -Xmx1536M
                      Task Parameter:RootFolder=C:\dev\WinHTTP\WinHTTP (TaskId:23)
                    Done executing task "AssignTargetPath". (TaskId:23)
                    Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
-16:45:25.457     1>Done building target "AssignTargetPaths" in project "WinHTTP.vcxproj".: (TargetId:68)
+16:53:20.700     1>Done building target "AssignTargetPaths" in project "WinHTTP.vcxproj".: (TargetId:68)
                    Target "AssignTargetPaths" skipped. Previously built successfully.
-16:45:25.457     1>Target "SplitResourcesByCulture: (TargetId:69)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareResourceNames" depends on it):
+16:53:20.700     1>Target "SplitResourcesByCulture: (TargetId:69)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareResourceNames" depends on it):
                    Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
                    Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
                    Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
@@ -2465,13 +2467,13 @@ _JAVA_OPTIONS = -Xmx1536M
                    Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "AssignCulture" (TaskId:24)
                    Done executing task "AssignCulture". (TaskId:24)
-16:45:25.458     1>Done building target "SplitResourcesByCulture" in project "WinHTTP.vcxproj".: (TargetId:69)
+16:53:20.701     1>Done building target "SplitResourcesByCulture" in project "WinHTTP.vcxproj".: (TargetId:69)
                    Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-16:45:25.458     1>Target "CreateCustomManifestResourceNames: (TargetId:70)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareResourceNames" depends on it):
-16:45:25.458     1>Done building target "CreateCustomManifestResourceNames" in project "WinHTTP.vcxproj".: (TargetId:70)
-16:45:25.458     1>Target "PrepareResourceNames: (TargetId:71)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
-16:45:25.458     1>Done building target "PrepareResourceNames" in project "WinHTTP.vcxproj".: (TargetId:71)
-16:45:25.459     1>Target "MakeDirsForLink: (TargetId:72)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.701     1>Target "CreateCustomManifestResourceNames: (TargetId:70)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareResourceNames" depends on it):
+16:53:20.701     1>Done building target "CreateCustomManifestResourceNames" in project "WinHTTP.vcxproj".: (TargetId:70)
+16:53:20.701     1>Target "PrepareResourceNames: (TargetId:71)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.701     1>Done building target "PrepareResourceNames" in project "WinHTTP.vcxproj".: (TargetId:71)
+16:53:20.701     1>Target "MakeDirsForLink: (TargetId:72)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Set Property: _LinkImportLibrary=C:\dev\WinHTTP\Debug\WinHTTP.lib
                    Added Item(s): _LinkImportLibraryFile=C:\dev\WinHTTP\Debug\WinHTTP.lib
                    Added Item(s): LinkDirsToMake=C:\dev\WinHTTP\Debug
@@ -2493,25 +2495,25 @@ _JAVA_OPTIONS = -Xmx1536M
                            C:\dev\WinHTTP\Debug
                            C:\dev\WinHTTP\Debug\
                    Removed Item(s): _LinkImportLibraryFile=C:\dev\WinHTTP\Debug\WinHTTP.lib
-16:45:25.460     1>Done building target "MakeDirsForLink" in project "WinHTTP.vcxproj".: (TargetId:72)
-16:45:25.460     1>Target "DoLinkOutputFilesMatch: (TargetId:73)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.705     1>Done building target "MakeDirsForLink" in project "WinHTTP.vcxproj".: (TargetId:72)
+16:53:20.705     1>Target "DoLinkOutputFilesMatch: (TargetId:73)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Added Item(s): _OutputFileFromLink=C:\dev\WinHTTP\Debug\WinHTTP.exe
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\dev\WinHTTP\Debug\WinHTTP.exe' == '').
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\dev\WinHTTP\Debug\WinHTTP.exe' != '' and 'C:\dev\WinHTTP\Debug\WinHTTP.exe' != 'C:\dev\WinHTTP\Debug\WinHTTP.exe').
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\dev\WinHTTP\Debug\WinHTTP.exe' != '' and '.exe' != '' and '.exe' != '.exe').
                    Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\dev\WinHTTP\Debug\WinHTTP.exe' != '' and 'WinHTTP' != '' and 'WinHTTP' != 'WinHTTP').
                    Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('Console' == '' or 'Console' == 'NotSet')).
-16:45:25.460     1>Done building target "DoLinkOutputFilesMatch" in project "WinHTTP.vcxproj".: (TargetId:73)
-16:45:25.460     1>Target "PreLinkEvent: (TargetId:74)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.707     1>Done building target "DoLinkOutputFilesMatch" in project "WinHTTP.vcxproj".: (TargetId:73)
+16:53:20.707     1>Target "PreLinkEvent: (TargetId:74)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
-16:45:25.460     1>Done building target "PreLinkEvent" in project "WinHTTP.vcxproj".: (TargetId:74)
-16:45:25.460     1>Target "ComputeLinkSwitches: (TargetId:75)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Link" depends on it):
+16:53:20.707     1>Done building target "PreLinkEvent" in project "WinHTTP.vcxproj".: (TargetId:74)
+16:53:20.707     1>Target "ComputeLinkSwitches: (TargetId:75)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Link" depends on it):
                    Set Property: Link_MinimalRebuildFromTracking=true
                    Set Property: LinkToolArchitecture=Native32Bit
                    Set Property: _GenerateWindowsMetadata=
-16:45:25.461     1>Done building target "ComputeLinkSwitches" in project "WinHTTP.vcxproj".: (TargetId:75)
-16:45:25.461     1>Target "Link: (TargetId:76)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:20.708     1>Done building target "ComputeLinkSwitches" in project "WinHTTP.vcxproj".: (TargetId:75)
+16:53:20.708     1>Target "Link: (TargetId:76)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Using "Link" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
                    Task "Link" (TaskId:26)
                      Task Parameter:BuildingInIde=True (TaskId:26)
@@ -2780,13 +2782,13 @@ _JAVA_OPTIONS = -Xmx1536M
                      	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.10240.0\UCRT\X86\UCRTD.LIB (TaskId:26)
                      Source compilation required: input C:\DEV\WINHTTP\WINHTTP\DEBUG\WINHTTP.OBJ is newer than output C:\DEV\WINHTTP\DEBUG\WINHTTP.PDB. (TaskId:26)
                      Environment Variables passed to tool: (TaskId:26)
-                       VS_UNICODE_OUTPUT=796 (TaskId:26)
+                       VS_UNICODE_OUTPUT=1436 (TaskId:26)
                      C:\apps\msvs14\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\dev\WinHTTP\Debug\WinHTTP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\dev\WinHTTP\Debug\WinHTTP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\dev\WinHTTP\Debug\WinHTTP.lib" /MACHINE:X86 Debug\logging.obj
                      Debug\StringTools.obj
                      Debug\URLInfo.obj
                      Debug\WinHTTP.obj (TaskId:26)
                      Tracking command: (TaskId:26)
-                     C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i C:\dev\WinHTTP\WinHTTP\Debug\WinHTTP.tlog /r "C:\DEV\WINHTTP\WINHTTP\DEBUG\LOGGING.OBJ|C:\DEV\WINHTTP\WINHTTP\DEBUG\STRINGTOOLS.OBJ|C:\DEV\WINHTTP\WINHTTP\DEBUG\URLINFO.OBJ|C:\DEV\WINHTTP\WINHTTP\DEBUG\WINHTTP.OBJ" /b MSBuildConsole_CancelEventd9ecb55184124ff08536010772761560  /c C:\apps\msvs14\VC\bin\link.exe  /ERRORREPORT:PROMPT /OUT:"C:\dev\WinHTTP\Debug\WinHTTP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\dev\WinHTTP\Debug\WinHTTP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\dev\WinHTTP\Debug\WinHTTP.lib" /MACHINE:X86 Debug\logging.obj
+                     C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i C:\dev\WinHTTP\WinHTTP\Debug\WinHTTP.tlog /r "C:\DEV\WINHTTP\WINHTTP\DEBUG\LOGGING.OBJ|C:\DEV\WINHTTP\WINHTTP\DEBUG\STRINGTOOLS.OBJ|C:\DEV\WINHTTP\WINHTTP\DEBUG\URLINFO.OBJ|C:\DEV\WINHTTP\WINHTTP\DEBUG\WINHTTP.OBJ" /b MSBuildConsole_CancelEvent3e3c17725a5043d2b8c4b6627610d74e  /c C:\apps\msvs14\VC\bin\link.exe  /ERRORREPORT:PROMPT /OUT:"C:\dev\WinHTTP\Debug\WinHTTP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\dev\WinHTTP\Debug\WinHTTP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\dev\WinHTTP\Debug\WinHTTP.lib" /MACHINE:X86 Debug\logging.obj
                      Debug\StringTools.obj
                      Debug\URLInfo.obj
                      Debug\WinHTTP.obj (TaskId:26)
@@ -2803,36 +2805,36 @@ _JAVA_OPTIONS = -Xmx1536M
                    Task "Message" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
                                 %(Link.GenerateDebugInformation) == 'Debug') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
                                 true == 'Debug').
-16:45:25.779     1>Done building target "Link" in project "WinHTTP.vcxproj".: (TargetId:76)
+16:53:21.093     1>Done building target "Link" in project "WinHTTP.vcxproj".: (TargetId:76)
                    Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
                    Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
                    Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-16:45:25.779     1>Target "ComputeLinkImportLibraryOutputsForClean: (TargetId:77)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:21.093     1>Target "ComputeLinkImportLibraryOutputsForClean: (TargetId:77)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
                    Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
-16:45:25.779     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "WinHTTP.vcxproj".: (TargetId:77)
-16:45:25.779     1>Target "AfterLink: (TargetId:78)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
-16:45:25.779     1>Done building target "AfterLink" in project "WinHTTP.vcxproj".: (TargetId:78)
-16:45:25.779     1>Target "_Link: (TargetId:79)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.779     1>Done building target "_Link" in project "WinHTTP.vcxproj".: (TargetId:79)
-16:45:25.779     1>Target "_ALink: (TargetId:80)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.779     1>Done building target "_ALink" in project "WinHTTP.vcxproj".: (TargetId:80)
+16:53:21.093     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "WinHTTP.vcxproj".: (TargetId:77)
+16:53:21.093     1>Target "AfterLink: (TargetId:78)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_Link" depends on it):
+16:53:21.093     1>Done building target "AfterLink" in project "WinHTTP.vcxproj".: (TargetId:78)
+16:53:21.093     1>Target "_Link: (TargetId:79)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.093     1>Done building target "_Link" in project "WinHTTP.vcxproj".: (TargetId:79)
+16:53:21.093     1>Target "_ALink: (TargetId:80)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.093     1>Done building target "_ALink" in project "WinHTTP.vcxproj".: (TargetId:80)
                    Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-16:45:25.779     1>Target "_Manifest: (TargetId:81)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.093     1>Target "_Manifest: (TargetId:81)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
                    Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
-16:45:25.780     1>Done building target "_Manifest" in project "WinHTTP.vcxproj".: (TargetId:81)
-16:45:25.780     1>Target "RegisterOutput: (TargetId:82)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.093     1>Done building target "_Manifest" in project "WinHTTP.vcxproj".: (TargetId:81)
+16:53:21.093     1>Target "RegisterOutput: (TargetId:82)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
                    Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
-16:45:25.780     1>Done building target "RegisterOutput" in project "WinHTTP.vcxproj".: (TargetId:82)
+16:53:21.094     1>Done building target "RegisterOutput" in project "WinHTTP.vcxproj".: (TargetId:82)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
-16:45:25.780     1>Target "ResolvedXDCMake: (TargetId:83)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_XdcMake" depends on it):
+16:53:21.094     1>Target "ResolvedXDCMake: (TargetId:83)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_XdcMake" depends on it):
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
-16:45:25.780     1>Done building target "ResolvedXDCMake" in project "WinHTTP.vcxproj".: (TargetId:83)
-16:45:25.780     1>Target "ComputeCLCompileGeneratedXDCFiles: (TargetId:84)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_XdcMake" depends on it):
+16:53:21.094     1>Done building target "ResolvedXDCMake" in project "WinHTTP.vcxproj".: (TargetId:83)
+16:53:21.094     1>Target "ComputeCLCompileGeneratedXDCFiles: (TargetId:84)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_XdcMake" depends on it):
                    Added Item(s): 
                        XdcMake=
                            temp
@@ -2855,67 +2857,67 @@ _JAVA_OPTIONS = -Xmx1536M
                                    OutputFile=C:\dev\WinHTTP\Debug\WinHTTP.xml
                                    SuppressStartupBanner=true
                                    TrackerLogDirectory=Debug\WinHTTP.tlog\
-16:45:25.781     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "WinHTTP.vcxproj".: (TargetId:84)
-16:45:25.781     1>Target "MakeDirsForXdcMake: (TargetId:85)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_XdcMake" depends on it):
+16:53:21.094     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "WinHTTP.vcxproj".: (TargetId:84)
+16:53:21.094     1>Target "MakeDirsForXdcMake: (TargetId:85)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_XdcMake" depends on it):
                    Task "MakeDir" (TaskId:28)
                    Done executing task "MakeDir". (TaskId:28)
-16:45:25.781     1>Done building target "MakeDirsForXdcMake" in project "WinHTTP.vcxproj".: (TargetId:85)
+16:53:21.094     1>Done building target "MakeDirsForXdcMake" in project "WinHTTP.vcxproj".: (TargetId:85)
                    Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-16:45:25.781     1>Target "_XdcMake: (TargetId:86)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.781     1>Done building target "_XdcMake" in project "WinHTTP.vcxproj".: (TargetId:86)
-16:45:25.781     1>Target "ComputeCLCompileGeneratedSbrFiles: (TargetId:87)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BscMake" depends on it):
-16:45:25.781     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "WinHTTP.vcxproj".: (TargetId:87)
-16:45:25.781     1>Target "MakeDirsForBscMake: (TargetId:88)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BscMake" depends on it):
+16:53:21.094     1>Target "_XdcMake: (TargetId:86)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.094     1>Done building target "_XdcMake" in project "WinHTTP.vcxproj".: (TargetId:86)
+16:53:21.095     1>Target "ComputeCLCompileGeneratedSbrFiles: (TargetId:87)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BscMake" depends on it):
+16:53:21.095     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "WinHTTP.vcxproj".: (TargetId:87)
+16:53:21.095     1>Target "MakeDirsForBscMake: (TargetId:88)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BscMake" depends on it):
                    Task "MakeDir" (TaskId:29)
                    Done executing task "MakeDir". (TaskId:29)
-16:45:25.781     1>Done building target "MakeDirsForBscMake" in project "WinHTTP.vcxproj".: (TargetId:88)
+16:53:21.095     1>Done building target "MakeDirsForBscMake" in project "WinHTTP.vcxproj".: (TargetId:88)
                    Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
                    Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-16:45:25.781     1>Target "_BscMake: (TargetId:89)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.781     1>Done building target "_BscMake" in project "WinHTTP.vcxproj".: (TargetId:89)
+16:53:21.095     1>Target "_BscMake: (TargetId:89)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.095     1>Done building target "_BscMake" in project "WinHTTP.vcxproj".: (TargetId:89)
                    Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
                    Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
-16:45:25.781     1>Target "_GenerateSatelliteAssemblyInputs: (TargetId:90)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+16:53:21.095     1>Target "_GenerateSatelliteAssemblyInputs: (TargetId:90)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
                    Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
                    Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-16:45:25.781     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "WinHTTP.vcxproj".: (TargetId:90)
+16:53:21.095     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "WinHTTP.vcxproj".: (TargetId:90)
                    Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
                    Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-16:45:25.781     1>Target "CreateSatelliteAssemblies: (TargetId:91)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.782     1>Done building target "CreateSatelliteAssemblies" in project "WinHTTP.vcxproj".: (TargetId:91)
-16:45:25.782     1>Target "_Appverifier: (TargetId:92)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.782     1>Done building target "_Appverifier" in project "WinHTTP.vcxproj".: (TargetId:92)
-16:45:25.782     1>Target "_Deploy: (TargetId:93)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.782     1>Done building target "_Deploy" in project "WinHTTP.vcxproj".: (TargetId:93)
+16:53:21.095     1>Target "CreateSatelliteAssemblies: (TargetId:91)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.095     1>Done building target "CreateSatelliteAssemblies" in project "WinHTTP.vcxproj".: (TargetId:91)
+16:53:21.095     1>Target "_Appverifier: (TargetId:92)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.095     1>Done building target "_Appverifier" in project "WinHTTP.vcxproj".: (TargetId:92)
+16:53:21.095     1>Target "_Deploy: (TargetId:93)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.095     1>Done building target "_Deploy" in project "WinHTTP.vcxproj".: (TargetId:93)
                    Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
                    Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
                    Target "AssignTargetPaths" skipped. Previously built successfully.
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-16:45:25.782     1>Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:94)" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+16:53:21.095     1>Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:94)" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
                    Task "AssignTargetPath" (TaskId:30)
                      Task Parameter:RootFolder=C:\dev\WinHTTP\WinHTTP (TaskId:30)
                    Done executing task "AssignTargetPath". (TaskId:30)
-16:45:25.782     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "WinHTTP.vcxproj".: (TargetId:94)
-16:45:25.782     1>Target "GetCopyToOutputDirectoryItems: (TargetId:95)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+16:53:21.095     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "WinHTTP.vcxproj".: (TargetId:94)
+16:53:21.096     1>Target "GetCopyToOutputDirectoryItems: (TargetId:95)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
                    Set Property: _GCTODIKeepDuplicates=false
                    Set Property: _GCTODIKeepMetadata=CopyToOutputDirectory;TargetPath
                    Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
                    Task "AssignTargetPath" (TaskId:31)
                      Task Parameter:RootFolder=C:\dev\WinHTTP\WinHTTP (TaskId:31)
                    Done executing task "AssignTargetPath". (TaskId:31)
-16:45:25.782     1>Done building target "GetCopyToOutputDirectoryItems" in project "WinHTTP.vcxproj".: (TargetId:95)
+16:53:21.096     1>Done building target "GetCopyToOutputDirectoryItems" in project "WinHTTP.vcxproj".: (TargetId:95)
                    Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
                    Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-16:45:25.782     1>Target "_CopySourceItemsToOutputDirectory: (TargetId:96)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
-16:45:25.782     1>Done building target "_CopySourceItemsToOutputDirectory" in project "WinHTTP.vcxproj".: (TargetId:96)
+16:53:21.096     1>Target "_CopySourceItemsToOutputDirectory: (TargetId:96)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+16:53:21.096     1>Done building target "_CopySourceItemsToOutputDirectory" in project "WinHTTP.vcxproj".: (TargetId:96)
                    Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
                    Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-16:45:25.782     1>Target "_CheckForCompileOutputs: (TargetId:97)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+16:53:21.096     1>Target "_CheckForCompileOutputs: (TargetId:97)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
                    Set Property: _DocumentationFileProduced=false
                    Set Property: _DebugSymbolsProduced=false
-16:45:25.783     1>Done building target "_CheckForCompileOutputs" in project "WinHTTP.vcxproj".: (TargetId:97)
+16:53:21.096     1>Done building target "_CheckForCompileOutputs" in project "WinHTTP.vcxproj".: (TargetId:97)
                    Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-16:45:25.783     1>Target "CopyFilesToOutputDirectory: (TargetId:98)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForRun" depends on it):
+16:53:21.096     1>Target "CopyFilesToOutputDirectory: (TargetId:98)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "PrepareForRun" depends on it):
                    Set Property: CreateHardLinksForCopyFilesToOutputDirectoryIfPossible=false
                    Set Property: CopyBuildOutputToOutputDirectory=true
                    Set Property: CopyOutputSymbolsToOutputDirectory=true
@@ -2929,22 +2931,22 @@ _JAVA_OPTIONS = -Xmx1536M
                    Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
                    Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
                    Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
-16:45:25.783     1>Done building target "CopyFilesToOutputDirectory" in project "WinHTTP.vcxproj".: (TargetId:98)
-16:45:25.783     1>Target "PrepareForRun: (TargetId:99)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
-16:45:25.783     1>Done building target "PrepareForRun" in project "WinHTTP.vcxproj".: (TargetId:99)
+16:53:21.097     1>Done building target "CopyFilesToOutputDirectory" in project "WinHTTP.vcxproj".: (TargetId:98)
+16:53:21.097     1>Target "PrepareForRun: (TargetId:99)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.097     1>Done building target "PrepareForRun" in project "WinHTTP.vcxproj".: (TargetId:99)
                    Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-16:45:25.783     1>Target "PostBuildEvent: (TargetId:100)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
+16:53:21.097     1>Target "PostBuildEvent: (TargetId:100)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "_BuildLinkAction" depends on it):
                    Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
-16:45:25.783     1>Done building target "PostBuildEvent" in project "WinHTTP.vcxproj".: (TargetId:100)
-16:45:25.783     1>Target "_BuildLinkAction: (TargetId:101)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildLink" depends on it):
-16:45:25.783     1>Done building target "_BuildLinkAction" in project "WinHTTP.vcxproj".: (TargetId:101)
-16:45:25.783     1>Target "BuildLink: (TargetId:102)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
-16:45:25.783     1>Done building target "BuildLink" in project "WinHTTP.vcxproj".: (TargetId:102)
+16:53:21.097     1>Done building target "PostBuildEvent" in project "WinHTTP.vcxproj".: (TargetId:100)
+16:53:21.097     1>Target "_BuildLinkAction: (TargetId:101)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "BuildLink" depends on it):
+16:53:21.097     1>Done building target "_BuildLinkAction" in project "WinHTTP.vcxproj".: (TargetId:101)
+16:53:21.097     1>Target "BuildLink: (TargetId:102)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:21.097     1>Done building target "BuildLink" in project "WinHTTP.vcxproj".: (TargetId:102)
                    Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
-16:45:25.783     1>Target "AfterBuild: (TargetId:103)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
-16:45:25.783     1>Done building target "AfterBuild" in project "WinHTTP.vcxproj".: (TargetId:103)
-16:45:25.783     1>Target "FinalizeBuildStatus: (TargetId:104)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:21.097     1>Target "AfterBuild: (TargetId:103)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
+16:53:21.097     1>Done building target "AfterBuild" in project "WinHTTP.vcxproj".: (TargetId:103)
+16:53:21.097     1>Target "FinalizeBuildStatus: (TargetId:104)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (target "Build" depends on it):
                    Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "Delete" (TaskId:32)
                      Task Parameter:Files=Debug\WinHTTP.tlog\unsuccessfulbuild (TaskId:32)
@@ -2954,136 +2956,136 @@ _JAVA_OPTIONS = -Xmx1536M
                      Task Parameter:Files=Debug\WinHTTP.tlog\WinHTTP.lastbuildstate (TaskId:33)
                      Touching "Debug\WinHTTP.tlog\WinHTTP.lastbuildstate". (TaskId:33)
                    Done executing task "Touch". (TaskId:33)
-16:45:25.785     1>Done building target "FinalizeBuildStatus" in project "WinHTTP.vcxproj".: (TargetId:104)
-16:45:25.785     1>Target "Build: (TargetId:105)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (entry point):
-16:45:25.785     1>Done building target "Build" in project "WinHTTP.vcxproj".: (TargetId:105)
-16:45:25.785     1>Done Building Project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (Build target(s)).
+16:53:21.104     1>Done building target "FinalizeBuildStatus" in project "WinHTTP.vcxproj".: (TargetId:104)
+16:53:21.104     1>Target "Build: (TargetId:105)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (entry point):
+16:53:21.104     1>Done building target "Build" in project "WinHTTP.vcxproj".: (TargetId:105)
+16:53:21.104     1>Done Building Project "C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj" (Build target(s)).
 
 Project Performance Summary:
-     2109 ms  C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj     1 calls
-               2109 ms  Build                                      1 calls
+     2475 ms  C:\dev\WinHTTP\WinHTTP\WinHTTP.vcxproj     1 calls
+               2475 ms  Build                                      1 calls
 
 Target Performance Summary:
         0 ms  AfterBuildCompileEvent                     1 calls
+        0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
+        0 ms  ResolveReferences                          1 calls
+        0 ms  SelectClCompile                            1 calls
         0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
+        0 ms  _CheckForCompileOutputs                    1 calls
+        0 ms  _Manifest                                  1 calls
         0 ms  _SelectedFiles                             1 calls
         0 ms  _PrepareForBuild                           1 calls
         0 ms  PostBuildEvent                             1 calls
         0 ms  _Midl                                      1 calls
         0 ms  SelectCustomBuild                          1 calls
         0 ms  _ClCompile                                 1 calls
-        0 ms  FixupCLCompileOptions                      1 calls
-        0 ms  SelectClCompile                            1 calls
-        0 ms  GetReferenceAssemblyPaths                  1 calls
+        0 ms  ModifyUnitTestPlatformVersion              1 calls
         0 ms  CreateCustomManifestResourceNames          1 calls
         0 ms  BeforeLink                                 1 calls
         0 ms  AfterBuild                                 1 calls
         0 ms  ComputeCLInputPDBName                      1 calls
         0 ms  GetCopyToOutputDirectoryItems              1 calls
         0 ms  _BuildLinkAction                           1 calls
+        0 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
         0 ms  BeforeResourceCompile                      1 calls
-        0 ms  AfterMidl                                  1 calls
-        0 ms  ModifyUnitTestPlatformVersion              1 calls
-        0 ms  PreLinkEvent                               1 calls
-        0 ms  ResolveReferences                          1 calls
         0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  BuildCompileTraverse                       1 calls
         0 ms  BuildGenerateSources                       1 calls
         0 ms  _CopySourceItemsToOutputDirectory          1 calls
         0 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
+        0 ms  GetFrameworkPaths                          1 calls
         0 ms  AfterResourceCompile                       1 calls
         0 ms  _Xsd                                       1 calls
         0 ms  ComputeCustomBuildOutput                   1 calls
         0 ms  MakeDirsForBscMake                         1 calls
         0 ms  _GenerateSatelliteAssemblyInputs           1 calls
-        0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
+        0 ms  MakeDirsForResourceCompile                 1 calls
         0 ms  _ResourceCompile                           1 calls
+        0 ms  ComputeLinkInputsFromProject               1 calls
         0 ms  Build                                      1 calls
         0 ms  _Link                                      1 calls
         0 ms  BuildLinkTraverse                          1 calls
         0 ms  ComputeRCOutputs                           1 calls
         0 ms  _XdcMake                                   1 calls
-        0 ms  CopyFilesToOutputDirectory                 1 calls
+        0 ms  CreateSatelliteAssemblies                  1 calls
         0 ms  ExpandSDKReferences                        1 calls
-        0 ms  BuildCompileTraverse                       1 calls
-        0 ms  ComputeLinkInputsFromProject               1 calls
-        0 ms  _Deploy                                    1 calls
+        0 ms  MakeDirsForCl                              1 calls
+        0 ms  AfterMidl                                  1 calls
         0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
-        0 ms  PrepareForRun                              1 calls
-        0 ms  _Appverifier                               1 calls
+        0 ms  _Deploy                                    1 calls
+        0 ms  AfterBuildGenerateSourcesEvent             1 calls
         0 ms  BeforeClCompile                            1 calls
         0 ms  AfterResolveReferences                     1 calls
-        0 ms  BeforeResolveReferences                    1 calls
-        0 ms  DoLinkOutputFilesMatch                     1 calls
-        0 ms  ComputeReferenceCLInput                    1 calls
-        0 ms  PrepareResourceNames                       1 calls
-        0 ms  _PrepareForReferenceResolution             1 calls
-        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  PreLinkEvent                               1 calls
+        0 ms  PrepareForRun                              1 calls
+        0 ms  PreBuildEvent                              1 calls
         0 ms  MakeDirsForMidl                            1 calls
         0 ms  _BscMake                                   1 calls
-        0 ms  ComputeCLCompileGeneratedSbrFiles          1 calls
-        0 ms  BuildLink                                  1 calls
+        0 ms  _Appverifier                               1 calls
         0 ms  _BuildGenerateSourcesAction                1 calls
+        0 ms  BuildLink                                  1 calls
+        0 ms  ComputeCLCompileGeneratedSbrFiles          1 calls
+        0 ms  ResolveSDKReferences                       1 calls
         0 ms  _ALink                                     1 calls
-        0 ms  AfterLink                                  1 calls
-        0 ms  Desktop_PlatformPrepareForBuild            1 calls
-        0 ms  ComputeRCGeneratedLinkInputs               1 calls
-        0 ms  BeforeBuildGenerateSources                 1 calls
-        0 ms  AfterClCompile                             1 calls
-        0 ms  ResolvedXDCMake                            1 calls
-        0 ms  AssignTargetPaths                          1 calls
-        0 ms  BuildGenerateSourcesTraverse               1 calls
-        0 ms  MakeDirsForXdcMake                         1 calls
-        0 ms  GetInstalledSDKLocations                   1 calls
-        0 ms  _BuildCompileAction                        1 calls
-        0 ms  ResolveProjectReferences                   1 calls
-        0 ms  BuildCompile                               1 calls
         0 ms  _SplitProjectReferencesByFileExistence     1 calls
-        0 ms  RegisterOutput                             1 calls
-        1 ms  ResolveAssemblyReferences                  1 calls
-        1 ms  _Manifest                                  1 calls
-        1 ms  MakeDirsForResourceCompile                 1 calls
-        1 ms  GetResolvedWinMD                           1 calls
-        1 ms  PreBuildEvent                              1 calls
-        1 ms  ComputeLegacyManifestEmbedding             1 calls
+        0 ms  BuildGenerateSourcesTraverse               1 calls
+        0 ms  AssignTargetPaths                          1 calls
+        0 ms  PrepareResourceNames                       1 calls
+        0 ms  AfterLink                                  1 calls
+        0 ms  BeforeResolveReferences                    1 calls
+        0 ms  ComputeRCGeneratedLinkInputs               1 calls
+        0 ms  ResolvedXDCMake                            1 calls
+        0 ms  BuildCompile                               1 calls
+        0 ms  _PrepareForReferenceResolution             1 calls
+        0 ms  _BuildCompileAction                        1 calls
+        0 ms  AfterClCompile                             1 calls
+        0 ms  GetInstalledSDKLocations                   1 calls
+        0 ms  PlatformPrepareForBuild                    1 calls
+        0 ms  BeforeBuildGenerateSources                 1 calls
+        0 ms  MakeDirsForXdcMake                         1 calls
+        1 ms  RegisterOutput                             1 calls
+        1 ms  Desktop_PlatformPrepareForBuild            1 calls
         1 ms  ComputeLinkSwitches                        1 calls
-        1 ms  _CheckForCompileOutputs                    1 calls
-        1 ms  ComputeCLGeneratedLinkInputs               1 calls
-        1 ms  MakeDirsForLink                            1 calls
-        1 ms  CreateSatelliteAssemblies                  1 calls
-        1 ms  PlatformPrepareForBuild                    1 calls
-        1 ms  AfterBuildGenerateSourcesEvent             1 calls
-        1 ms  AssignProjectConfiguration                 1 calls
-        1 ms  SplitResourcesByCulture                    1 calls
+        1 ms  GetReferenceAssemblyPaths                  1 calls
+        1 ms  ComputeManifestInputsTargets               1 calls
+        1 ms  ResolveAssemblyReferences                  1 calls
+        1 ms  CopyFilesToOutputDirectory                 1 calls
+        1 ms  ResolveProjectReferences                   1 calls
+        1 ms  ComputeLegacyManifestEmbedding             1 calls
         1 ms  SetBuildDefaultEnvironmentVariables        1 calls
-        1 ms  GetFrameworkPaths                          1 calls
-        1 ms  MakeDirsForCl                              1 calls
-        1 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
+        1 ms  FixupCLCompileOptions                      1 calls
+        1 ms  SplitResourcesByCulture                    1 calls
+        1 ms  GetResolvedWinMD                           1 calls
+        1 ms  AssignProjectConfiguration                 1 calls
+        2 ms  DoLinkOutputFilesMatch                     1 calls
         2 ms  WarnCompileDuplicatedFilename              1 calls
-        2 ms  ComputeManifestInputsTargets               1 calls
-        2 ms  FinalizeBuildStatus                        1 calls
-        4 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-        5 ms  ComputeCLOutputs                           1 calls
-        7 ms  InitializeBuildStatus                      1 calls
-        7 ms  PrepareForBuild                            1 calls
-       14 ms  SetCABuildNativeEnvironmentVariables       1 calls
-      318 ms  Link                                       1 calls
-     1727 ms  ClCompile                                  1 calls
+        2 ms  ComputeCLOutputs                           1 calls
+        4 ms  ComputeReferenceCLInput                    1 calls
+        4 ms  MakeDirsForLink                            1 calls
+        5 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+        5 ms  PrepareForBuild                            1 calls
+        7 ms  FinalizeBuildStatus                        1 calls
+        8 ms  InitializeBuildStatus                      1 calls
+        9 ms  SetCABuildNativeEnvironmentVariables       1 calls
+       16 ms  ComputeCLGeneratedLinkInputs               1 calls
+      384 ms  Link                                       1 calls
+     2004 ms  ClCompile                                  1 calls
 
 Task Performance Summary:
         0 ms  AssignTargetPath                           6 calls
         0 ms  SetEnvironmentVariable                     1 calls
         0 ms  AssignCulture                              1 calls
+        0 ms  Message                                    3 calls
         0 ms  ReadLinesFromFile                          1 calls
-        1 ms  Delete                                     1 calls
-        1 ms  AssignProjectConfiguration                 1 calls
         1 ms  SetEnv                                     4 calls
-        1 ms  Message                                    3 calls
-        3 ms  MakeDir                                    9 calls
-        3 ms  Touch                                      2 calls
-        4 ms  WriteLinesToFile                           1 calls
-      316 ms  Link                                       1 calls
-     1722 ms  CL                                         1 calls
+        1 ms  AssignProjectConfiguration                 1 calls
+        2 ms  WriteLinesToFile                           1 calls
+        4 ms  MakeDir                                    9 calls
+        5 ms  Delete                                     1 calls
+        6 ms  Touch                                      2 calls
+      381 ms  Link                                       1 calls
+     2002 ms  CL                                         1 calls
 
 Build succeeded.
 
-Time Elapsed 00:00:02.12
+Time Elapsed 00:00:02.47

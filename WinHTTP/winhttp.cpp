@@ -215,10 +215,10 @@ int main(int argc, char* argv[]) {
     closesocket(ConnectSocket);
     WSACleanup();
 
-    /*
+    
     std::cout << "\n\nPress a key to quit.";
     std::cin.get();
-    */
+    
 
     return 0;
 }
