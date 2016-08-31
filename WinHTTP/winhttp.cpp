@@ -16,58 +16,56 @@ using namespace std;
 //MSDN Winsock Client Application
 //https://msdn.microsoft.com/en-us/library/windows/desktop/bb530750(v=vs.85).aspx
 
+struct app_options { 
+    URLInfo url_info;
+    bool b_verbose_mode;
+    bool b_save_response;
+    string str_http_method;
+    string str_port_num;
+    string str_outfile;
+};
+
+bool init_connection(SOCKET& conn_socket, URLInfo& url_info);
+void send_http_request(SOCKET& conn_socket, app_options& options);
+void receive_http_response(SOCKET& conn_socket, app_options& options);
+void output_to_file(string& str_filename, char * response_buff);
+void get_options(int argc, char* argv[], app_options& options);
+
 int main(int argc, char* argv[]) {
 
-    WSADATA wsaData;
-    int iResult;
-    bool b_verbose_mode = false;
-    bool b_save_response = false;
-    string strOutFilePath;
-    string strHttpMethod = "GET";
+    URLInfo url_info;
+    SOCKET conn_socket = INVALID_SOCKET;
+    struct app_options options;
+    
+    //Set default options
+    options.b_verbose_mode = false;
+    options.b_save_response = false;
+    options.str_http_method = "GET";
+    options.str_port_num = DEFAULT_PORT;
 
-    //==========================================================================
-    // CHECK ARGS
-    //==========================================================================
-    if(argc <= 1) {
-        cout << "Not enough or invalid arguments.\n";
-        cout << "URL argument required.";
-        Sleep(2000);
-        exit(0);
-    }
+    get_options(argc, argv, options);
 
-    string strURL(argv[1]);
-    URLInfo urlInfo;
-    StringTools::parseURL(strURL, urlInfo);
-
-    /* Debug info */
-    /*
-    cout << "\n[" << strURL << "]";
-    cout << "\n[ str_protocol: " << urlInfo.protocol << "]";
-    cout << "\n[ str_host: " << urlInfo.host << "]";
-    cout << "\n[ str_path: " << urlInfo.path << "]";
-    */
-
-    for (int i = 1; i < argc; i++) { 
+    if (init_connection(conn_socket, options.url_info)) {
         
-        string strArg(argv[i]);
+        send_http_request(conn_socket, options);
+        
+        receive_http_response(conn_socket, options);
+    };
 
-        if (strArg == "--output" || strArg == "-o") {
-            //Save response to file
-            b_save_response = true;
-            strOutFilePath = string(argv[i + 1]);
-        }
-        else if (strArg == "--method" || strArg == "-m") {
-            strHttpMethod = string(argv[i + 1]);
-            cout << "\n** METHOD " << strHttpMethod << "**\n";
-        }
-        else if (strArg == "--verbose" || strArg == "-v") {
-            b_verbose_mode = true;
-        }
-    }
+    std::cout << "\n\nPress a key to quit.";
+    std::cin.get();
+    
+    return 0;
+}
 
-    //==========================================================================
-    // INIT - Initialize Winsock, initiate use of WS2_32.dll.
-    //==========================================================================
+//==========================================================================
+// init_connection - Initialize Winsock WS2_32.dll and attempt to connect
+//==========================================================================
+bool init_connection(SOCKET& conn_socket, URLInfo& url_info) {
+    
+    int iResult;
+    WSADATA wsaData;
+
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 
     if (iResult != 0) {
@@ -85,23 +83,21 @@ int main(int argc, char* argv[]) {
     hints.ai_protocol = IPPROTO_TCP;
 
     // Resolve the server address and port
-    //iResult = getaddrinfo(strURL.c_str(), DEFAULT_PORT, &hints, &result);
-    iResult = getaddrinfo(urlInfo.host.c_str(), DEFAULT_PORT, &hints, &result);
+    // iResult = getaddrinfo(strURL.c_str(), DEFAULT_PORT, &hints, &result);
+    iResult = getaddrinfo(url_info.host.c_str(), DEFAULT_PORT, &hints, &result);
     if (iResult != 0) {
         printf("\ngetaddrinfo failed: %d\n", iResult);
         WSACleanup();
         return 1;
     }
 
-    SOCKET ConnectSocket = INVALID_SOCKET;
-
     //==========================================================================
     // CONNECT - Attempt to connect to the first address returned by getaddrinfo
     //==========================================================================
     ptr = result;
-    ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
+    conn_socket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
 
-    if (ConnectSocket == INVALID_SOCKET) {
+    if (conn_socket == INVALID_SOCKET) {
         printf("\nError at socket(): %ld\n", WSAGetLastError());
         freeaddrinfo(result);
         WSACleanup();
@@ -109,11 +105,11 @@ int main(int argc, char* argv[]) {
     }
 
     // Connect to server.
-    iResult = connect(ConnectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);
+    iResult = connect(conn_socket, ptr->ai_addr, (int)ptr->ai_addrlen);
     if (iResult == SOCKET_ERROR) {
         printf("\nSocket error.\n");
-        closesocket(ConnectSocket);
-        ConnectSocket = INVALID_SOCKET;
+        closesocket(conn_socket);
+        conn_socket = INVALID_SOCKET;
     }
 
     // Should really try the next address returned by getaddrinfo
@@ -123,87 +119,91 @@ int main(int argc, char* argv[]) {
 
     freeaddrinfo(result);
 
-    if (ConnectSocket == INVALID_SOCKET) {
+    if (conn_socket == INVALID_SOCKET) {
         printf("\nUnable to connect to server!\n");
         WSACleanup();
-        return 1;
+        return 0;
     }
+}
 
-    //==========================================================================
-    // SEND REQUEST - Send an initial buffer
-    //==========================================================================
-    int recvbuflen = DEFAULT_BUFLEN;
-
+//==========================================================================
+// send_http_request - Send an initial buffer
+//==========================================================================
+void send_http_request(SOCKET& conn_socket, app_options& options) {
+    
+    int iResult;
     std::string strReq;
-    strReq.append(strHttpMethod);
+
+    strReq.append(options.str_http_method);
     strReq.append(" ");
-    strReq.append(urlInfo.path);
+    strReq.append(options.url_info.path);
     strReq.append(" HTTP/1.0");
     strReq.append("\r\nHOST: ");
-    strReq.append(urlInfo.host);
+    strReq.append(options.url_info.host);
     strReq.append(":");
-    strReq.append(DEFAULT_PORT);
+    strReq.append(options.str_port_num);
     strReq.append("\r\n\r\n");
 
-    iResult = send(ConnectSocket, strReq.c_str(), (int)strlen(strReq.c_str()), 0);
+    iResult = send(conn_socket, strReq.c_str(), (int)strlen(strReq.c_str()), 0);
     if (iResult == SOCKET_ERROR) {
         printf("send failed: %d\n", WSAGetLastError());
-        closesocket(ConnectSocket);
+        closesocket(conn_socket);
         WSACleanup();
-        return 1;
+        return;
     }
 
-    if (b_verbose_mode && iResult > 0) {
-           printf("\n=== REQUEST: ===");
-           printf("\nBytes Sent: %ld", iResult);
-           printf("\n%s", strReq.c_str());
+    if (options.b_verbose_mode && iResult > 0) {
+        printf("\nBytes Sent: %ld", iResult);
+        printf("\n%s", strReq.c_str());
     }
 
     // shutdown the connection for sending since no more data will be sent
     // the client can still use the ConnectSocket for receiving data
-    iResult = shutdown(ConnectSocket, SD_SEND);
+    iResult = shutdown(conn_socket, SD_SEND);
     if (iResult == SOCKET_ERROR) {
         printf("shutdown failed: %d\n", WSAGetLastError());
-        closesocket(ConnectSocket);
+        closesocket(conn_socket);
         WSACleanup();
-        return 1;
+        return;
     }
+}
 
-    //==========================================================================
-    // RECEIVE RESPONSE - read data until the server closes the connection
-    //==========================================================================
+//==========================================================================
+// receive_http_response - read data until the server closes the connection
+//==========================================================================
+void receive_http_response(SOCKET& conn_socket, app_options& options) {
+
+    int iResult;
+    int rcv_buff_length = DEFAULT_BUFLEN;
     int loop_count = 0;
-    if (b_verbose_mode) printf("\n=== RESPONSE ===\n");
+
+    //Loop to receive the raw reponse from the socket
     do {
-        char recvbuf[DEFAULT_BUFLEN];
-        iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
-        
-        std::ofstream outfile;
-        
-        if (b_save_response) {
-            if (strOutFilePath.empty()) strOutFilePath = "response.html";
-            outfile.open(strOutFilePath, std::ios::app);
-            outfile << recvbuf;
-        }
-        
+        char receive_buff[DEFAULT_BUFLEN];
+        iResult = recv(conn_socket, receive_buff, rcv_buff_length, 0);
+
+        if (options.b_save_response) 
+            output_to_file(options.str_outfile, receive_buff);
+
         if (iResult > 0) {
-            string str_resp_buff = string(recvbuf);
-            if (b_verbose_mode) {
+            string str_resp_buff = string(receive_buff);
+            
+            if (options.b_verbose_mode) 
                 printf("\rBytes received: %d\n", iResult);
-                //printf("%s", recvbuf);
-            }
+            
             if (loop_count == 0) {
                 //Read the status code
-                string str_response(recvbuf);
+                string str_response(receive_buff);
                 vector<string> items = StringTools::split(str_response, ' ');
-                if (!b_verbose_mode && items.size() >= 1) {
-                    cout << "\nSTATUS CODE: " << items[1] << "\n";
-                }
+                string str_status = items[1];
+                //if (!options.b_verbose_mode && items.size() >= 1) {
+                //    cout << "\nSTATUS CODE: " << items[1] << "\n";
+                //}
             }
             cout << str_resp_buff;
         }
         else if (iResult == 0) {
-            if(b_verbose_mode) printf("\nConnection closed\n");
+            if (options.b_verbose_mode) printf("\nConnection closed\n");
         }
         else {
             printf("recv failed: %d\n", WSAGetLastError());
@@ -211,14 +211,61 @@ int main(int argc, char* argv[]) {
         loop_count++;
     } while (iResult > 0);
 
-    // cleanup
-    closesocket(ConnectSocket);
+    closesocket(conn_socket);
     WSACleanup();
+}
 
-    
-    std::cout << "\n\nPress a key to quit.";
-    std::cin.get();
+//==========================================================================
+// output_to_file - save response to file
+//==========================================================================
+void output_to_file(string& str_filename, char * response_buff) {
+    std::ofstream outfile;
+    if (str_filename.empty()) 
+        str_filename = "response.html";
+    outfile.open(str_filename, std::ios::app);
+    outfile << response_buff;
+}
+
+//==========================================================================
+// get_options - get options from command line args
+//==========================================================================
+void get_options(int argc, char* argv[], app_options& options) {
+
+    if (argc <= 1) {
+        cout << "Not enough or invalid arguments.\n";
+        cout << "URL argument required.";
+        Sleep(2000);
+        exit(0);
+    }
+
+    URLInfo url_info;
+    string str_url(argv[1]);
+    StringTools::parseURL(str_url, options.url_info);
     
 
-    return 0;
+    for (int i = 1; i < argc; i++) {
+
+        string strArg(argv[i]);
+
+        if (strArg == "--output" || strArg == "-o") {
+            //Save response to file
+            options.b_save_response = true;
+            options.str_outfile = string(argv[i + 1]);
+        }
+        else if (strArg == "--method" || strArg == "-m") {
+            options.str_http_method = string(argv[i + 1]);
+            cout << "\n** METHOD " << options.str_http_method << "**\n";
+        }
+        else if (strArg == "--verbose" || strArg == "-v") {
+            options.b_verbose_mode = true;
+        }
+    }
+
+    /* Debug info */
+    /*
+    cout << "\n[" << strURL << "]";
+    cout << "\n[ str_protocol: " << url_info.protocol << "]";
+    cout << "\n[ str_host: " << url_info.host << "]";
+    cout << "\n[ str_path: " << url_info.path << "]";
+    */
 }
