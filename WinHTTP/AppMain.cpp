@@ -1,36 +1,11 @@
-#include <iostream>
-#include <fstream>
-#include <winsock2.h>
-#include <ws2tcpip.h>
-#include <stdio.h>
-#include <string>
-#include "logging.h"
-#include "stringtools.h"
-#include "urlinfo.h"
-
-#pragma comment(lib, "Ws2_32.lib")
-#define DEFAULT_PORT "80"
-#define DEFAULT_BUFLEN 1024
-using namespace std;
+#include "AppMain.h"
 
 //MSDN Winsock Client Application
 //https://msdn.microsoft.com/en-us/library/windows/desktop/bb530750(v=vs.85).aspx
 
-struct app_options { 
-    URLInfo url_info;
-    bool b_verbose_mode;
-    bool b_save_response;
-    string str_http_method;
-    string str_port_num;
-    string str_outfile;
-};
-
-bool init_connection(SOCKET& conn_socket, URLInfo& url_info);
-void send_http_request(SOCKET& conn_socket, app_options& options);
-void receive_http_response(SOCKET& conn_socket, app_options& options);
-void output_to_file(string& str_filename, char * response_buff);
-void get_options(int argc, char* argv[], app_options& options);
-
+//==========================================================================
+// main - application entry point
+//==========================================================================
 int main(int argc, char* argv[]) {
 
     URLInfo url_info;
@@ -52,10 +27,56 @@ int main(int argc, char* argv[]) {
         receive_http_response(conn_socket, options);
     };
 
+#ifdef _DEBUG
     std::cout << "\n\nPress a key to quit.";
     std::cin.get();
-    
+#endif
+
     return 0;
+}
+
+//==========================================================================
+// get_options - get options from command line args
+//==========================================================================
+void get_options(int argc, char* argv[], app_options& options) {
+
+    if (argc <= 1) {
+        cout << "Not enough or invalid arguments.\n";
+        cout << "URL argument required.";
+        Sleep(2000);
+        exit(0);
+    }
+
+    URLInfo url_info;
+    string str_url(argv[1]);
+    StringTools::parseURL(str_url, options.url_info);
+
+
+    for (int i = 1; i < argc; i++) {
+
+        string strArg(argv[i]);
+
+        if (strArg == "--output" || strArg == "-o") {
+            //Save response to file
+            options.b_save_response = true;
+            options.str_outfile = string(argv[i + 1]);
+        }
+        else if (strArg == "--method" || strArg == "-m") {
+            options.str_http_method = string(argv[i + 1]);
+            cout << "\n** METHOD " << options.str_http_method << "**\n";
+        }
+        else if (strArg == "--verbose" || strArg == "-v") {
+            options.b_verbose_mode = true;
+        }
+    }
+
+    /* Debug info */
+    /*
+    cout << "\n[" << strURL << "]";
+    cout << "\n[ str_protocol: " << url_info.protocol << "]";
+    cout << "\n[ str_host: " << url_info.host << "]";
+    cout << "\n[ str_path: " << url_info.path << "]";
+    */
 }
 
 //==========================================================================
@@ -224,48 +245,4 @@ void output_to_file(string& str_filename, char * response_buff) {
         str_filename = "response.html";
     outfile.open(str_filename, std::ios::app);
     outfile << response_buff;
-}
-
-//==========================================================================
-// get_options - get options from command line args
-//==========================================================================
-void get_options(int argc, char* argv[], app_options& options) {
-
-    if (argc <= 1) {
-        cout << "Not enough or invalid arguments.\n";
-        cout << "URL argument required.";
-        Sleep(2000);
-        exit(0);
-    }
-
-    URLInfo url_info;
-    string str_url(argv[1]);
-    StringTools::parseURL(str_url, options.url_info);
-    
-
-    for (int i = 1; i < argc; i++) {
-
-        string strArg(argv[i]);
-
-        if (strArg == "--output" || strArg == "-o") {
-            //Save response to file
-            options.b_save_response = true;
-            options.str_outfile = string(argv[i + 1]);
-        }
-        else if (strArg == "--method" || strArg == "-m") {
-            options.str_http_method = string(argv[i + 1]);
-            cout << "\n** METHOD " << options.str_http_method << "**\n";
-        }
-        else if (strArg == "--verbose" || strArg == "-v") {
-            options.b_verbose_mode = true;
-        }
-    }
-
-    /* Debug info */
-    /*
-    cout << "\n[" << strURL << "]";
-    cout << "\n[ str_protocol: " << url_info.protocol << "]";
-    cout << "\n[ str_host: " << url_info.host << "]";
-    cout << "\n[ str_path: " << url_info.path << "]";
-    */
 }

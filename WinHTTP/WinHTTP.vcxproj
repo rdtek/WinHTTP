@@ -146,9 +146,10 @@
     <ClCompile Include="logging.cpp" />
     <ClCompile Include="StringTools.cpp" />
     <ClCompile Include="URLInfo.cpp" />
-    <ClCompile Include="WinHTTP.cpp" />
+    <ClCompile Include="AppMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AppMain.h" />
     <ClInclude Include="logging.h" />
     <ClInclude Include="StringTools.h" />
     <ClInclude Include="URLInfo.h" />
