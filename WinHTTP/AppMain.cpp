@@ -1,6 +1,6 @@
 #include "AppMain.h"
 
-//MSDN Winsock Client Application
+//Usefule MSDN docs for Winsock Client Application
 //https://msdn.microsoft.com/en-us/library/windows/desktop/bb530750(v=vs.85).aspx
 
 //==========================================================================
@@ -8,7 +8,6 @@
 //==========================================================================
 int main(int argc, char* argv[]) {
 
-    URLInfo url_info;
     SOCKET conn_socket = INVALID_SOCKET;
     struct app_options options;
     
@@ -20,10 +19,9 @@ int main(int argc, char* argv[]) {
 
     get_options(argc, argv, options);
 
+    //Setup connection, send and receive
     if (init_connection(conn_socket, options.url_info)) {
-        
         send_http_request(conn_socket, options);
-        
         receive_http_response(conn_socket, options);
     };
 
@@ -47,10 +45,8 @@ void get_options(int argc, char* argv[], app_options& options) {
         exit(0);
     }
 
-    URLInfo url_info;
     string str_url(argv[1]);
     StringTools::parseURL(str_url, options.url_info);
-
 
     for (int i = 1; i < argc; i++) {
 
@@ -68,15 +64,10 @@ void get_options(int argc, char* argv[], app_options& options) {
         else if (strArg == "--verbose" || strArg == "-v") {
             options.b_verbose_mode = true;
         }
+        else if (strArg == "--location" || strArg == "-L") {
+            options.b_follow_location = true;
+        }
     }
-
-    /* Debug info */
-    /*
-    cout << "\n[" << strURL << "]";
-    cout << "\n[ str_protocol: " << url_info.protocol << "]";
-    cout << "\n[ str_host: " << url_info.host << "]";
-    cout << "\n[ str_path: " << url_info.path << "]";
-    */
 }
 
 //==========================================================================
@@ -197,6 +188,7 @@ void receive_http_response(SOCKET& conn_socket, app_options& options) {
     int iResult;
     int rcv_buff_length = DEFAULT_BUFLEN;
     int loop_count = 0;
+    map<string, string> mp_http_headers;
 
     //Loop to receive the raw reponse from the socket
     do {
@@ -213,13 +205,26 @@ void receive_http_response(SOCKET& conn_socket, app_options& options) {
                 printf("\rBytes received: %d\n", iResult);
             
             if (loop_count == 0) {
-                //Read the status code
+
+                //Declare variables
                 string str_response(receive_buff);
-                vector<string> items = StringTools::split(str_response, ' ');
-                string str_status = items[1];
-                //if (!options.b_verbose_mode && items.size() >= 1) {
-                //    cout << "\nSTATUS CODE: " << items[1] << "\n";
-                //}
+                vector<string> v_split_items;
+                vector<string> v_response_lines;
+                string str_status;
+
+                //Read the status code
+                v_split_items = StringTools::split(str_response, ' ');
+                str_status = v_split_items[1];
+
+                //Read the headers
+                v_response_lines = StringTools::split(str_response, '\n');
+                read_http_headers(v_response_lines, mp_http_headers);
+
+#ifdef _DEBUG
+                //Print headers
+                for (auto kvp : mp_http_headers)
+                    cout << "\nHEADER ITEM [" << kvp.first << "] [" << kvp.second << "]";
+#endif // _DEBUG
             }
             cout << str_resp_buff;
         }
@@ -234,6 +239,51 @@ void receive_http_response(SOCKET& conn_socket, app_options& options) {
 
     closesocket(conn_socket);
     WSACleanup();
+
+    //Follow redirect if location header present
+    if (options.b_follow_location) {
+        map<string, string>::iterator it = mp_http_headers.find("Location");
+        if (it != mp_http_headers.end()) {
+            string str_location_url = it->second;
+            //cout << "LOCATION " << str_location_url;
+
+            StringTools::parseURL(str_location_url, options.url_info);
+            if (init_connection(conn_socket, options.url_info)) {
+                send_http_request(conn_socket, options);
+                receive_http_response(conn_socket, options);
+            };
+        }
+    }
+}
+
+//==========================================================================
+// read_http_headers - read the headers into a map structure
+//==========================================================================
+void read_http_headers(vector<string> v_response_lines, map<string, string>& mp_headers) {
+    
+    for (vector<string>::const_iterator it = v_response_lines.begin(); 
+        it != v_response_lines.end(); ++it) {
+
+        string str_line = *it;
+        str_line = StringTools::trim(str_line);
+
+        bool found_html = str_line.find("<HTML") == 0 || str_line.find("<html") == 0;
+        if (found_html) {
+            //cout << "\nFOUND HTML";
+            break;
+        }
+
+        //Split the line to get the header key value pair
+        int split_pos = str_line.find(':', 0);
+        if (split_pos >= 1) {
+            string str_header_key = StringTools::trim(str_line.substr(0, split_pos));
+            string str_header_val = StringTools::trim(str_line.substr(split_pos + 1, string::npos));
+            mp_headers[str_header_key] = str_header_val;
+        }
+        else {
+            //cout << str_line;
+        }
+    }
 }
 
 //==========================================================================
