@@ -3,7 +3,8 @@ Windows cmd line tool to send HTTP requests
 
 ### Usage
 
-Simple GET request, response printed to console.
+*Simple GET request*  
+Response printed to console.
 ```
 C:\winhttp http://www.google.com
 ```  
