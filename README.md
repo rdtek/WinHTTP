@@ -8,7 +8,7 @@ Response printed to console.
 ```
 C:\winhttp http://www.google.com
 ```  
-**2. Save response**  
+**2. Save response**  `--output` (`-o`)    
 GET request, response saved to file using `--output` (`-o`) flag. 
 ```
 C:\winhttp http://www.google.com -o response.html
